@@ -9,7 +9,7 @@
     "For Loop": {
         "prefix": "for",
         "body": [
-            "for (${name:initial}; ${name:compare}; ${name:increase})",
+            "for (${1:initial}; ${2:compare}; ${3:increase})",
             "{",
             "\t$0",
             "}"
@@ -19,7 +19,7 @@
     "While Loop": {
         "prefix": "while",
         "body": [
-            "while (${name:compare})",
+            "while (${1:compare})",
             "{",
             "\t$0",
             "}"
@@ -33,14 +33,14 @@
             "{",
             "\t$0",
             "}",
-            "while (${name:compare})"
+            "while (${1:compare})"
         ],
         "description": "Do-While Loop"
     },
     "If Statement": {
         "prefix": "if",
         "body": [
-            "if (${name:compare})",
+            "if (${1:compare})",
             "{",
             "\t$0",
             "}"
@@ -50,7 +50,7 @@
     "If-Else Statement": {
         "prefix": "ifelse",
         "body": [
-            "if (${name:compare})",
+            "if (${1:compare})",
             "{",
             "\t$0",
             "}",

@@ -2,7 +2,7 @@
     "attack Event": {
         "prefix": "attach",
         "body": [
-            "attach( key ${name:id} )",
+            "attach( key ${1:id} )",
             "{",
             "\t$0",
             "}"
@@ -12,7 +12,7 @@
     "at_rot_target Event": {
         "prefix": "at_rot_target",
         "body": [
-            "at_rot_target( integer ${name:handle}, rotation ${name:targetrot}, rotation ${name:ourrot} )",
+            "at_rot_target( integer ${1:handle}, rotation ${2:targetrot}, rotation ${3:ourrot} )",
             "{",
             "\t$0",
             "}"
@@ -22,7 +22,7 @@
     "at_target Event": {
         "prefix": "at_target",
         "body": [
-            "at_target( integer ${name:tnum}, vector ${name:targetpos}, vector ${name:ourpos} )",
+            "at_target( integer ${1:tnum}, vector ${2:targetpos}, vector ${3:ourpos} )",
             "{",
             "\t$0",
             "}"
@@ -32,7 +32,7 @@
     "changed Event": {
         "prefix": "changed",
         "body": [
-            "changed( integer ${name:change} )",
+            "changed( integer ${1:change} )",
             "{",
             "\t$0",
             "}"
@@ -42,7 +42,7 @@
     "collision Event": {
         "prefix": "collision",
         "body": [
-            "collision( integer ${name:num_detected} )",
+            "collision( integer ${1:num_detected} )",
             "{",
             "\t$0",
             "}"
@@ -52,7 +52,7 @@
     "collision_end Event": {
         "prefix": "collision_end",
         "body": [
-            "collision_end( integer ${name:num_detected} )",
+            "collision_end( integer ${1:num_detected} )",
             "{",
             "\t$0",
             "}"
@@ -62,7 +62,7 @@
     "collision_start Event": {
         "prefix": "collision_start",
         "body": [
-            "collision_start( integer ${name:num_detected} )",
+            "collision_start( integer ${1:num_detected} )",
             "{",
             "\t$0",
             "}"
@@ -72,7 +72,7 @@
     "control Event": {
         "prefix": "control",
         "body": [
-            "control( key ${name:id}, integer ${name:level}, integer ${name:edge} )",
+            "control( key ${1:id}, integer ${2:level}, integer ${3:edge} )",
             "{",
             "\t$0",
             "}"
@@ -82,7 +82,7 @@
     "dataserver Event": {
         "prefix": "dataserver",
         "body": [
-            "dataserver( key ${name:queryid}, string ${name:data} )",
+            "dataserver( key ${1:queryid}, string ${2:data} )",
             "{",
             "\t$0",
             "}"
@@ -92,7 +92,7 @@
     "email Event": {
         "prefix": "email",
         "body": [
-            "email( string ${name:time}, string ${name:address}, string ${name:subject}, string ${name:message}, integer ${num_left} )",
+            "email( string ${1:time}, string ${2:address}, string ${3:subject}, string ${4:message}, integer ${5:num_left} )",
             "{",
             "\t$0",
             "}"
@@ -102,7 +102,7 @@
     "experience_permissions Event": {
         "prefix": "experience_permissions",
         "body": [
-            "experience_permissions( key ${name:agent_id} )",
+            "experience_permissions( key ${1:agent_id} )",
             "{",
             "\t$0",
             "}"
@@ -112,7 +112,7 @@
     "experience_permissions_denied Event": {
         "prefix": "experience_permissions_denied",
         "body": [
-            "experience_permissions_denied( key ${name:agent_id}, integer ${name:reason} )",
+            "experience_permissions_denied( key ${1:agent_id}, integer ${2:reason} )",
             "{",
             "\t$0",
             "}"
@@ -122,7 +122,7 @@
     "http_request Event": {
         "prefix": "http_request",
         "body": [
-            "http_request( key ${name:request_id}, string ${name:method}, string ${name:body} )",
+            "http_request( key ${1:request_id}, string ${2:method}, string ${3:body} )",
             "{",
             "\t$0",
             "}"
@@ -132,7 +132,7 @@
     "http_response Event": {
         "prefix": "http_response",
         "body": [
-            "http_response( key ${name:request_id}, integer ${name:status}, list ${name:metadata}, string ${name:body} )",
+            "http_response( key ${1:request_id}, integer ${2:status}, list ${3:metadata}, string ${4:body} )",
             "{",
             "\t$0",
             "}"
@@ -142,7 +142,7 @@
     "land_collision Event": {
         "prefix": "land_collision",
         "body": [
-            "land_collision( vector ${name:pos} )",
+            "land_collision( vector ${1:pos} )",
             "{",
             "\t$0",
             "}"
@@ -152,7 +152,7 @@
     "land_collision_end Event": {
         "prefix": "land_collision_end",
         "body": [
-            "land_collision_end( vector ${name:pos} )",
+            "land_collision_end( vector ${1:pos} )",
             "{",
             "\t$0",
             "}"
@@ -162,7 +162,7 @@
     "land_collision_start Event": {
         "prefix": "land_collision_start",
         "body": [
-            "land_collision_start( vector ${name:pos} )",
+            "land_collision_start( vector ${1:pos} )",
             "{",
             "\t$0",
             "}"
@@ -172,7 +172,7 @@
     "link_message Event": {
         "prefix": "link_message",
         "body": [
-            "link_message( integer ${name:sender_num}, integer ${name:num}, string ${name:str}, key ${name:id} )",
+            "link_message( integer ${1:sender_num}, integer ${2:num}, string ${3:str}, key ${4:id} )",
             "{",
             "\t$0",
             "}"
@@ -182,7 +182,7 @@
     "listen Event": {
         "prefix": "listen",
         "body": [
-            "listen( integer ${name:channel}, string ${name:name}, key ${name:id}, string ${name:message} )",
+            "listen( integer ${1:channel}, string ${2:name}, key ${3:id}, string ${4:message} )",
             "{",
             "\t$0",
             "}"
@@ -192,7 +192,7 @@
     "money Event": {
         "prefix": "money",
         "body": [
-            "money( key ${name:id}, integer ${name:amount} )",
+            "money( key ${1:id}, integer ${2:amount} )",
             "{",
             "\t$0",
             "}"
@@ -252,7 +252,7 @@
     "object_rez Event": {
         "prefix": "object_rez",
         "body": [
-            "object_rez( key ${name:id} )",
+            "object_rez( key ${1:id} )",
             "{",
             "\t$0",
             "}"
@@ -262,7 +262,7 @@
     "on_rez Event": {
         "prefix": "on_rez",
         "body": [
-            "on_rez( integer ${name:start_param})",
+            "on_rez( integer ${1:start_param})",
             "{",
             "\t$0",
             "}"
@@ -272,7 +272,7 @@
     "path_update Event": {
         "prefix": "path_update",
         "body": [
-            "path_update( integer ${name:type}, list ${name:reserved} )",
+            "path_update( integer ${1:type}, list ${2:reserved} )",
             "{",
             "\t$0",
             "}"
@@ -282,7 +282,7 @@
     "remote_data Event": {
         "prefix": "remote_data",
         "body": [
-            "remote_data( integer ${name:event_type}, key ${name:channel}, key ${name:message_id}, string ${name:sender}, integer ${name:idata}, string ${name:sdata} )",
+            "remote_data( integer ${1:event_type}, key ${2:channel}, key ${3:message_id}, string ${4:sender}, integer ${5:idata}, string ${6:sdata} )",
             "{",
             "\t$0",
             "}"
@@ -292,7 +292,7 @@
     "run_time_permissions Event": {
         "prefix": "run_time_permissions",
         "body": [
-            "run_time_permissions( integer ${name:perm} )",
+            "run_time_permissions( integer ${1:perm} )",
             "{",
             "\t$0",
             "}"
@@ -302,7 +302,7 @@
     "sensor Event": {
         "prefix": "sensor",
         "body": [
-            "sensor( integer ${name:num_detected} )",
+            "sensor( integer ${1:num_detected} )",
             "{",
             "\t$0",
             "}"
@@ -342,7 +342,7 @@
     "touch Event": {
         "prefix": "touch",
         "body": [
-            "touch( integer ${name:num_detected} )",
+            "touch( integer ${1:num_detected} )",
             "{",
             "\t$0",
             "}"
@@ -352,7 +352,7 @@
     "touch_end Event": {
         "prefix": "touch_end",
         "body": [
-            "touch_end( integer ${name:num_detected} )",
+            "touch_end( integer ${1:num_detected} )",
             "{",
             "\t$0",
             "}"
@@ -362,7 +362,7 @@
     "touch_start Event": {
         "prefix": "touch_start",
         "body": [
-            "touch_start( integer ${name:num_detected} )",
+            "touch_start( integer ${1:num_detected} )",
             "{",
             "\t$0",
             "}"
@@ -372,7 +372,7 @@
     "transaction_result Event": {
         "prefix": "transaction_result",
         "body": [
-            "transaction_result( key ${name:id}, integer ${name:success} , string ${name:data} )",
+            "transaction_result( key ${1:id}, integer ${2:success} , string ${3:data} )",
             "{",
             "\t$0",
             "}"
@@ -382,7 +382,7 @@
     "linkset_data Event": {
         "prefix": "linkset_data",
         "body": [
-            "linkset_data( integer ${name:action}, string ${name:name} , string ${name:value} )",
+            "linkset_data( integer ${1:action}, string ${2:name} , string ${3:value} )",
             "{",
             "\t$0",
             "}"

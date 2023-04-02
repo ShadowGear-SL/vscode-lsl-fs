@@ -2,14 +2,14 @@
     "State-Change": {
         "prefix": "statechange",
         "body": [
-            "state $0;"
+            "state ${1:name};$0"
         ],
         "description": "State Change"
     },
     "State": {
         "prefix": "state",
         "body": [
-            "state ${name:name}",
+            "state ${1:name}",
             "{",
             "\t$0",
             "}"

@@ -2,14 +2,14 @@
     "Pragma Onse": {
         "prefix": "pragma once",
         "body": [
-            "#ifndef ${name:FILE_INDENTIFIER}",
-            "#define ${name:FILE_INDENTIFIER}",
+            "#ifndef ${1:FILE_INDENTIFIER}",
+            "#define ${2:FILE_INDENTIFIER}",
             "",
             "",
             "$0",
             "",
             "",
-            "#endif // ${name:FILE_INDENTIFIER}",
+            "#endif // ${3:FILE_INDENTIFIER}",
             ""
         ],
         "description": "pragma once implement"
@@ -18,49 +18,49 @@
     "Float Casting Preprocessor": {
         "prefix": "float()",
         "body": [
-            "float(${name:value}$0)"
+            "float(${1:value}$0)"
         ],
         "description": "Float Casting Preprocessor"
     },
     "Integer Casting Preprocessor": {
         "prefix": "integer()",
         "body": [
-            "integer(${name:value}$0)"
+            "integer(${1:value}$0)"
         ],
         "description": "Integer Casting Preprocessor"
     },
     "Key Casting Preprocessor": {
         "prefix": "key()",
         "body": [
-            "key(${name:value}$0)"
+            "key(${1:value}$0)"
         ],
         "description": "Key Casting Preprocessor"
     },
     "List Casting Preprocessor": {
         "prefix": "list()",
         "body": [
-            "list(${name:value}$0)"
+            "list(${1:value}$0)"
         ],
         "description": "List Casting Preprocessor"
     },
     "Rotation Casting Preprocessor": {
         "prefix": "rotation()",
         "body": [
-            "rotation(${name:value}$0)"
+            "rotation(${1:value}$0)"
         ],
         "description": "Rotation Casting Preprocessor"
     },
     "String Casting Preprocessor": {
         "prefix": "string()",
         "body": [
-            "string(${name:value}$0)"
+            "string(${1:value}$0)"
         ],
         "description": "String Casting Preprocessor"
     },
     "Vector Casting Preprocessor": {
         "prefix": "vector()",
         "body": [
-            "vector(${name:value}$0)"
+            "vector(${1:value}$0)"
         ],
         "description": "Vector Casting Preprocessor"
     },
@@ -87,7 +87,7 @@
     "Define Preprocessor": {
         "prefix": "#define",
         "body": [
-            "#define ${name:identifier}",
+            "#define ${1:identifier}",
             "$0"
         ],
         "description": "Define Preprocessor"
@@ -95,7 +95,7 @@
     "Undef Preprocessor": {
         "prefix": "#undef",
         "body": [
-            "#undef ${name:identifier}",
+            "#undef ${1:identifier}",
             "$0"
         ],
         "description": "Undef Preprocessor"
@@ -103,7 +103,7 @@
     "Ifdef Preprocessor": {
         "prefix": "#ifdef",
         "body": [
-            "#ifdef ${name:identifier}",
+            "#ifdef ${1:identifier}",
             "$0"
         ],
         "description": "Ifdef Preprocessor"
@@ -111,7 +111,7 @@
     "Ifndef Preprocessor": {
         "prefix": "#ifndef",
         "body": [
-            "#ifndef ${name:identifier}",
+            "#ifndef ${1:identifier}",
             "$0"
         ],
         "description": "Ifndef Preprocessor"
@@ -119,7 +119,7 @@
     "If Preprocessor": {
         "prefix": "#if",
         "body": [
-            "#if ${name:constant-expression}",
+            "#if ${1:constant-expression}",
             "$0"
         ],
         "description": "If Preprocessor"
@@ -127,7 +127,7 @@
     "Elif Preprocessor": {
         "prefix": "#elif",
         "body": [
-            "#elif ${name:constant-expression}",
+            "#elif ${1:constant-expression}",
             "$0"
         ],
         "description": "Elif Preprocessor"
@@ -151,7 +151,7 @@
     "Warning Preprocessor": {
         "prefix": "#warning",
         "body": [
-            "#warning ${name:warningtoken-string}",
+            "#warning ${1:warningtoken-string}",
             "$0"
         ],
         "description": "Warning Preprocessor"
@@ -159,7 +159,7 @@
     "Error Preprocessor": {
         "prefix": "#error",
         "body": [
-            "#error ${name:errortoken-string}",
+            "#error ${1:errortoken-string}",
             "$0"
         ],
         "description": "Error Preprocessor"
@@ -167,7 +167,7 @@
     "Include Preprocessor": {
         "prefix": "#include",
         "body": [
-            "#include \"${name:path-spec}\"",
+            "#include \"${1:path-spec}\"",
             "$0"
         ],
         "description": "Include Preprocessor"
@@ -235,9 +235,9 @@
     "Switch Statement": {
         "prefix": "switch",
         "body": [
-            "switch (${name:value})",
+            "switch (${1:value})",
             "{",
-            "\tcase (${name:case}):",
+            "\tcase (${2:case}):",
             "\t{",
             "\t\t$0",
             "\t\tbreak;",
