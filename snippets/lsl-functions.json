@@ -225,14 +225,14 @@
     "llCloseRemoteDataChannel": {
         "prefix": "llCloseRemoteDataChannel",
         "body": [
-            "llCloseRemoteDataChannel(${1:channel});$0"
+            "llCloseRemoteDataChannel(DEPRECATED, Do Not Use);$0"
         ],
         "description": "llCloseRemoteDataChannel( key channel );\n\n 257 Function ID\n 1.0 Forced Delay\n 10.0 Energy\n\nCloses XML-RPC channel.\n• key channel\n"
     },
     "llCloud": {
         "prefix": "llCloud",
         "body": [
-            "llCloud(${1:offset})$0"
+            "llCloud(DEPRECATED, Do Not Use)$0"
         ],
         "description": "float llCloud( vector offset );\n\n 43 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns a float that is the cloud density at the prim position + offset\n• vector offset – offset relative to the prim's position and expressed in local coordinates\nOnly the x and y coordinates in offset are important, the z component is ignored.\nReturned values are in the range [0.0, 2.0]. Values above 1.0 indicate rain.\n"
     },
@@ -253,7 +253,7 @@
     "llCollisionSprite": {
         "prefix": "llCollisionSprite",
         "body": [
-            "llCollisionSprite(${1:impact_sprite});$0"
+            "llCollisionSprite(BROKEN, Do Not Use);$0"
         ],
         "description": "llCollisionSprite( string impact_sprite );\n\n 161 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nSuppress default collision sprites, replace default impact sprite with impact_sprite\n• string impact_sprite – a texture in the inventory of the prim this script is in, a UUID of a texture or an empty string\nTo suppress the collision sprite all together, just use an empty string as the value for impact_sprite\n"
     },
@@ -788,6 +788,13 @@
             "llGetHTTPHeader(${1:request_id}, ${2:header})$0"
         ],
         "description": "string llGetHTTPHeader( key request_id, string header );\n\n 349 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns a string that is the value for header for request_id.\n• key request_id – A valid HTTP request key.\n• string header – Lower case header value name.\nReturns an empty string if the header is not found or if the headers can no longer be accessed. Headers can only be accessed before llHTTPResponse is called and with-in the first 30 seconds after the http_request event is queued.\n"
+    },
+    "llGetInventoryAquireTime": {
+        "prefix": "llGetInventoryAquireTime",
+        "body": [
+            "llGetInventoryAquireTime(${1:item})$0"
+        ],
+        "description": "string llGetInventoryAcquireTime( string item );\nReturns a string with the timestamp that the item was added to the prim's inventory."
     },
     "llGetInventoryCreator": {
         "prefix": "llGetInventoryCreator",
@@ -1433,6 +1440,13 @@
         ],
         "description": "vector llGetVel( );\n\n 77 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns a vector that is the velocity of the object.Speed is the magnitude of the velocity. Speed is measured in meter per second.\nVelocity reported is relative to the global coordinate frame (the object rotation has no affect on this functions output).\nFor physic objects , velocity is the velocity of its center of mass llGetCenterOfMass . ( When the object has some torque and has not force , position of the object moves ( it turns ) , but its center of mass is unchanged , so the velocity is null )\n"
     },
+    "llGetVisualParams": {
+        "prefix": "llGetVisualParams",
+        "body": [
+            "llGetVisualParams(${1:agentid}, ${2:params})$0"
+        ],
+        "description": "list llGetVisualParams( key agentid, list params );\nReturns a list of the details for agentid requested in params."
+    },
     "llGetWallclock": {
         "prefix": "llGetWallclock",
         "body": [
@@ -1464,7 +1478,7 @@
     "llGodLikeRezObject": {
         "prefix": "llGodLikeRezObject",
         "body": [
-            "llGodLikeRezObject(${1:inventory}, ${2:pos});$0"
+            "llGodLikeRezObject(${1|inventory|God Mode Function|}, ${2|pos|God Mode Function});$0"
         ],
         "description": "llGodLikeRezObject( key inventory, vector pos );\n\n 135 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nRez directly off of UUID if owner has god-bit set.\n• key inventory\n• vector pos – position in region coordinates\n"
     },
@@ -1601,6 +1615,13 @@
         ],
         "description": "vector llLinear2sRGB( vector color );\n\n  Function ID\n Forced Delay\n Energy\n\nReturns a vector Transforms a color specified in linear RGB colorspace into the sRGB colorspace.\n• vector color – Color in the linear color space.\n"
     },
+    "llLinkAdjustSoundVolume": {
+        "prefix": "llLinkAdjustSoundVolume",
+        "body": [
+            "llLinkAdjustSoundVolume(${1:link}, ${2:volume});$0"
+        ],
+        "description": "llLinkAdjustSoundVolume( integer link, float volume );\nAdjusts volume of attached sound."
+    },
     "llLinkParticleSystem": {
         "prefix": "llLinkParticleSystem",
         "body": [
@@ -1608,12 +1629,40 @@
         ],
         "description": "llLinkParticleSystem( integer link, list rules );\n\n 229 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nA particle system defined by a list of rules is set for the prim(s) link.\n• integer link – Link number (0: unlinked, 1: root prim, >1: child prims and seated avatars) or a LINK_* flag\n• list rules – Particle system rules list in the format [ rule1, data1, rule2, data2 . . . rulen, datan ]\n"
     },
+    "llLinkPlaySound": {
+        "prefix": "llLinkPlaySound",
+        "body": [
+            "llLinkPlaySound(${1:link}, ${2:sound}, ${3:volume};$0"
+        ],
+        "description": "llLinkPlaySound( integer link, string sound, float volume );\nPlays attached sound once at volume."
+    },
+    "llLinkSetSoundQueueing": {
+        "prefix": "llLinkSetSoundQueueing",
+        "body": [
+            "llLinkSetSoundQueueing(${1:link}, ${2:queue});$0"
+        ],
+        "description": " llLinkSetSoundQueueing( integer link, integer queue );\nSet whether attached sounds wait for the current sound to finish. If queue is TRUE, queuing is enabled, if FALSE queuing is disabled. Sound queuing is disabled by default."
+    },
+    "llLinkSetSoundRadius": {
+        "prefix": "llLinkSetSoundRadius",
+        "body": [
+            "llLinkSetSoundRadius(${1:link}, ${2:radius});$0"
+        ],
+        "description": "llLinkSetSoundRadius( integer link, float radius );\nEstablishes a hard cut-off radius for audibility of scripted sounds (both attached and triggered). "
+    },
     "llLinkSitTarget": {
         "prefix": "llLinkSitTarget",
         "body": [
             "llLinkSitTarget(${1|integer link,LINK_THIS,LINK_ROOT|}, ${2:offset}, ${3:rot});$0"
         ],
         "description": "llLinkSitTarget( integer link, vector offset, rotation rot );\n\n ? Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nSet the sit location for the linked prim(s). The sit location is relative to the prim's position and rotation.\n• integer link – Link number (0: unlinked, 1: root prim, >1: child prims and seated avatars) or a LINK_* flag \n• vector offset – Additional position for the sit target in local prim coordinates.\n• rotation rot – Additional rotation for the sit target relative to the prim rotation.\nIf offset == <0.0, 0.0, 0.0> then the sit target is removed.\n"
+    },
+    "llLinkStopSound": {
+        "prefix": "llLinkStopSound",
+        "body": [
+            "llLinkStopSound(${1:link});$0"
+        ],
+        "description": "llLinkStopSound( integer link );\nStops the attached sound(s) currently playing, if they were started by llLoopSound."
     },
     "llLinksetDataAvailable": {
         "prefix": "llLinksetDataAvailable",
@@ -1979,10 +2028,17 @@
         ],
         "description": "llOffsetTexture( float u, float v, integer face );\n\n 55 Function ID\n 0.2 Forced Delay\n 10.0 Energy\n\nSets the texture u & v offsets for the chosen face.\n• float u – horizontal (x) offset in the interval [-1.0, 1.0]\n• float v – vertical (y) offset in the interval [-1.0, 1.0]\n• integer face – face number or ALL_SIDES\nIf face is ALL_SIDES then the function works on all sides."
     },
+    "llOpenFloater": {
+        "prefix": "llOpenFloater",
+        "body": [
+            "llOpenFloater(${1|floater_name|Linden Experience Only|}, ${2|url|Linden Experience Only|}, ${3|params|Linden Experience Only|})$0"
+        ],
+        "description": "integer llOpenFloater( string floater_name, string url, list params );\nThe llOpenFloater function will send a request to the viewer requesting that it open a new floater with the provided title on the viewer.\nThis function must be called from a script running within an attachment.\nThe script must also have been compiled as part of a Linden owned experience.\nIf the request was successfully sent to the viewer this function will return 0."
+    },
     "llOpenRemoteDataChannel": {
         "prefix": "llOpenRemoteDataChannel",
         "body": [
-            "llOpenRemoteDataChannel();$0"
+            "llOpenRemoteDataChannel(DEPRECATED, Do Not Use);$0"
         ],
         "description": "llOpenRemoteDataChannel( );\n\n 254 Function ID\n 1.0 Forced Delay\n 10.0 Energy\n\nCreates a channel to listen for XML-RPC calls. Will trigger a remote_data event with channel id once it is available."
     },
@@ -2080,7 +2136,7 @@
     "llPointAt": {
         "prefix": "llPointAt",
         "body": [
-            "llPointAt(${1:pos});$0"
+            "llPointAt(DEPRECATED, Do Not Use);$0"
         ],
         "description": "llPointAt( vector pos );\n\n 131 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nMake agent that owns object point at pos\n• vector pos\n"
     },
@@ -2122,7 +2178,7 @@
     "llRefreshPrimURL": {
         "prefix": "llRefreshPrimURL",
         "body": [
-            "llRefreshPrimURL();$0"
+            "llRefreshPrimURL(DEPRECATED, Do Not Use);$0"
         ],
         "description": "llRefreshPrimURL( );\n\n 306 Function ID\n 20.0 Forced Delay\n 10.0 Energy\n\nReloads the web page shown on the sides of the object.This functions currently does nothing.\n"
     },
@@ -2143,7 +2199,7 @@
     "llReleaseCamera": {
         "prefix": "llReleaseCamera",
         "body": [
-            "llReleaseCamera(${1:avatar});$0"
+            "llReleaseCamera(DEPRECATED, Never Implemented);$0"
         ],
         "description": "llReleaseCamera( key avatar );\n\n 116 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nThis function is recognized by the compiler, but was never implemented in Second Life.\n• key avatar – avatar UUID that is in the same region\n"
     },
@@ -2164,14 +2220,14 @@
     "llRemoteDataReply": {
         "prefix": "llRemoteDataReply",
         "body": [
-            "llRemoteDataReply(${1:channel}, ${2:message_id}, ${3:sdata}, ${4:idata});$0"
+            "llRemoteDataReply(DEPRECATED, Do Not Use);$0"
         ],
         "description": "llRemoteDataReply( key channel, key message_id, string sdata, integer idata );\n\n 256 Function ID\n 3.0 Forced Delay\n 10.0 Energy\n\nSend an XML-RPC reply on channel to message_id with payload of string sdata and integer idata\n• key channel\n• key message_id\n• string sdata\n• integer idata\n"
     },
     "llRemoteDataSetRegion": {
         "prefix": "llRemoteDataSetRegion",
         "body": [
-            "llRemoteDataSetRegion();$0"
+            "llRemoteDataSetRegion(DEPRECATED, Do Not Use);$0"
         ],
         "description": "llRemoteDataSetRegion( );\n\n 263 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nUsed with XML-RPC. If an object using remote data channels changes regions, you must call this function to reregister the remote data channels.This call is not needed if the prim does not change regions.\n"
     },
@@ -2514,7 +2570,7 @@
     "llSendRemoteData": {
         "prefix": "llSendRemoteData",
         "body": [
-            "llSendRemoteData(${1:channel}, ${2:dest}, ${3:idata}, ${4:sdata})$0"
+            "llSendRemoteData(DEPRECATED, Do Not Use)$0"
         ],
         "description": "key llSendRemoteData( key channel, string dest, integer idata, string sdata );\n\n 255 Function ID\n 3.0 Forced Delay\n 10.0 Energy\n\nSend an XML-RPC request to dest through channel with payload of channel (in a string), integer idata and string sdata.Returns a key that is the message_id for the resulting remote_data events.\n• key channel\n• string dest\n• integer idata\n• string sdata\n"
     },
@@ -2752,7 +2808,7 @@
     "llSetObjectPermMask": {
         "prefix": "llSetObjectPermMask",
         "body": [
-            "llSetObjectPermMask(${1:mask}, ${2:value});$0"
+            "llSetObjectPermMask(${1|mask|God Mode Function|}, ${2|value|God Mode FUnction});$0"
         ],
         "description": "llSetObjectPermMask( integer mask, integer value );\n\n 288 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nSets the given permission mask to the new value on the root object the task is attached to.\n• integer mask – MASK_* flag\n• integer value – bit-field, PERM_* flags\n"
     },
@@ -2794,7 +2850,7 @@
     "llSetPrimURL": {
         "prefix": "llSetPrimURL",
         "body": [
-            "llSetPrimURL(${1:url});$0"
+            "llSetPrimURL(DEPRECATED, Do Not Use);$0"
         ],
         "description": "llSetPrimURL( string url );\n\n 305 Function ID\n 20.0 Forced Delay\n 10.0 Energy\n\nUpdates the URL for the web page shown on the sides of the object.\n• string url\n"
     },
@@ -2997,7 +3053,7 @@
     "llSoundPreload": {
         "prefix": "llSoundPreload",
         "body": [
-            "llSoundPreload(${1:sound});$0"
+            "llSoundPreload(DEPRECATED, Avoid Use);$0"
         ],
         "description": "llSoundPreload( string sound );\n\n 126 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nPreloads sound on viewers within range.\n• string sound – a sound in the inventory of the prim this script is in or a UUID of a sound\n"
     },
@@ -3060,7 +3116,7 @@
     "llStopPointAt": {
         "prefix": "llStopPointAt",
         "body": [
-            "llStopPointAt();$0"
+            "llStopPointAt(DEPRECATED, Do Not Use);$0"
         ],
         "description": "llStopPointAt( );\n\n 132 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nStop agent that owns object pointing"
     },
@@ -3102,7 +3158,7 @@
     "llTakeCamera": {
         "prefix": "llTakeCamera",
         "body": [
-            "llTakeCamera(${1:avatar});$0"
+            "llTakeCamera(DEPRECATED, Do Not Use);$0"
         ],
         "description": "llTakeCamera( key avatar );\n\n 115 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nThis function is recognized by the compiler, but was never implemented in Second Life.\n• key avatar – avatar UUID that is in the same region\n"
     },
@@ -3305,7 +3361,7 @@
     "llXorBase64Strings": {
         "prefix": "llXorBase64Strings",
         "body": [
-            "llXorBase64Strings(${1:str1}, ${2:str2})$0"
+            "llXorBase64Strings(DEPRECATED, Do Not Use)$0"
         ],
         "description": "string llXorBase64Strings( string str1, string str2 );\n\n 262 Function ID\n 0.3 Forced Delay\n 10.0 Energy\n\nReturns a string that is a Base64 string of s1 xor'ed with s2.\n• string str1 – Base64 string\n• string str2 – Base64 string\ns2 repeats if it is shorter than s1. Retained for backwards compatibility.\n"
     },
