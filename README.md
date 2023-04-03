@@ -16,9 +16,9 @@ Initial release.
 
 ## Future plans
 
-Add syntax highlighting for Firestorm Preprocessor directives.
-Add incoming LSL features currently being tested in RC Bluesteel.
-Create a proper Language Server Protocol for LSL to properly implement intellisense.
+- Add syntax highlighting for Firestorm Preprocessor directives.
+- Add incoming LSL features currently being tested in RC Bluesteel.
+- Create a proper Language Server Protocol for LSL to properly implement intellisense.
 
 ## Patch Notes
 
