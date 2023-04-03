@@ -1,6 +1,6 @@
-# lsl-FS README
+# LSL-FS README
 
-Basic snippets and syntax for LSL and Firestorm enabled features.
+Provides basic snippets and syntax for LSL and Firestorm enabled features.
 
 ## Features
 
@@ -16,9 +16,17 @@ Initial release.
 
 ## Future plans
 
+Add syntax highlighting for Firestorm Preprocessor directives.
+Add incoming LSL features currently being tested in RC Bluesteel.
 Create a proper Language Server Protocol for LSL to properly implement intellisense.
 
 ## Patch Notes
+
+### 0.1.5
+* Fix snippet tab completion.
+* Update LSL version to 2023-01-11.577595.
+* Fill in missing snippets for new (and not new) functions and constants.
+* Update deprecation and restricted use warnings.
 
 ### 0.1.0
 
