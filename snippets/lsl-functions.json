@@ -789,10 +789,10 @@
         ],
         "description": "string llGetHTTPHeader( key request_id, string header );\n\n 349 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns a string that is the value for header for request_id.\n• key request_id – A valid HTTP request key.\n• string header – Lower case header value name.\nReturns an empty string if the header is not found or if the headers can no longer be accessed. Headers can only be accessed before llHTTPResponse is called and with-in the first 30 seconds after the http_request event is queued.\n"
     },
-    "llGetInventoryAquireTime": {
-        "prefix": "llGetInventoryAquireTime",
+    "llGetInventoryAcquireTime": {
+        "prefix": "llGetInventoryAcquireTime",
         "body": [
-            "llGetInventoryAquireTime(${1:item})$0"
+            "llGetInventoryAcquireTime(${1:item})$0"
         ],
         "description": "string llGetInventoryAcquireTime( string item );\nReturns a string with the timestamp that the item was added to the prim's inventory."
     },
