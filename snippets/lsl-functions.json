@@ -1478,7 +1478,7 @@
     "llGodLikeRezObject": {
         "prefix": "llGodLikeRezObject",
         "body": [
-            "llGodLikeRezObject(${1|inventory|God Mode Function|}, ${2|pos|God Mode Function});$0"
+            "llGodLikeRezObject(${1|inventory,God Mode Function|}, ${2|pos,God Mode Function});$0"
         ],
         "description": "llGodLikeRezObject( key inventory, vector pos );\n\n 135 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nRez directly off of UUID if owner has god-bit set.\n• key inventory\n• vector pos – position in region coordinates\n"
     },
@@ -2031,7 +2031,7 @@
     "llOpenFloater": {
         "prefix": "llOpenFloater",
         "body": [
-            "llOpenFloater(${1|floater_name|Linden Experience Only|}, ${2|url|Linden Experience Only|}, ${3|params|Linden Experience Only|})$0"
+            "llOpenFloater(${1|floater_name,Linden Experience Only|}, ${2|url,Linden Experience Only|}, ${3|params,Linden Experience Only|})$0"
         ],
         "description": "integer llOpenFloater( string floater_name, string url, list params );\nThe llOpenFloater function will send a request to the viewer requesting that it open a new floater with the provided title on the viewer.\nThis function must be called from a script running within an attachment.\nThe script must also have been compiled as part of a Linden owned experience.\nIf the request was successfully sent to the viewer this function will return 0."
     },
@@ -2808,7 +2808,7 @@
     "llSetObjectPermMask": {
         "prefix": "llSetObjectPermMask",
         "body": [
-            "llSetObjectPermMask(${1|mask|God Mode Function|}, ${2|value|God Mode FUnction});$0"
+            "llSetObjectPermMask(${1|mask,God Mode Function|}, ${2|value,God Mode Function});$0"
         ],
         "description": "llSetObjectPermMask( integer mask, integer value );\n\n 288 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nSets the given permission mask to the new value on the root object the task is attached to.\n• integer mask – MASK_* flag\n• integer value – bit-field, PERM_* flags\n"
     },
