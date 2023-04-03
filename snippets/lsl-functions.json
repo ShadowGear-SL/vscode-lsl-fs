@@ -1478,7 +1478,7 @@
     "llGodLikeRezObject": {
         "prefix": "llGodLikeRezObject",
         "body": [
-            "llGodLikeRezObject(${1|inventory,God Mode Function|}, ${2|pos,God Mode Function});$0"
+            "llGodLikeRezObject(${1|inventory,God Mode Function|}, ${2|pos,God Mode Function|});$0"
         ],
         "description": "llGodLikeRezObject( key inventory, vector pos );\n\n 135 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nRez directly off of UUID if owner has god-bit set.\n• key inventory\n• vector pos – position in region coordinates\n"
     },
@@ -2808,7 +2808,7 @@
     "llSetObjectPermMask": {
         "prefix": "llSetObjectPermMask",
         "body": [
-            "llSetObjectPermMask(${1|mask,God Mode Function|}, ${2|value,God Mode Function});$0"
+            "llSetObjectPermMask(${1|mask,God Mode Function|}, ${2|value,God Mode Function|});$0"
         ],
         "description": "llSetObjectPermMask( integer mask, integer value );\n\n 288 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nSets the given permission mask to the new value on the root object the task is attached to.\n• integer mask – MASK_* flag\n• integer value – bit-field, PERM_* flags\n"
     },
