@@ -902,6 +902,13 @@
         ],
         "description": "CLICK_ACTION_BUY"
     },
+    "CLICK_ACTION_DISABLED": {
+        "prefix": "CLICK_ACTION_DISABLED",
+        "body": [
+            "CLICK_ACTION_DISABLED$0"
+        ],
+        "description": "CLICK_ACTION_DISABLED"
+    },
     "CLICK_ACTION_NONE": {
         "prefix": "CLICK_ACTION_NONE",
         "body": [
@@ -1182,6 +1189,13 @@
         ],
         "description": "Unable to find specified agent."
     },
+    "ENV_INVALID_RULE": {
+        "prefix": "ENV_INVALID_RULE",
+        "body": [
+            "ENV_INVALID_RULE$0"
+        ],
+        "description": "ENV_INVALID_RULE"
+    },
     "ENV_NOT_EXPERIENCE": {
         "prefix": "ENV_NOT_EXPERIENCE",
         "body": [
@@ -1209,6 +1223,27 @@
             "ENV_NO_EXPERIENCE_PERMISSION$0"
         ],
         "description": "The agent has not granted permission."
+    },
+    "ENV_NO_PERMISSIONS": {
+        "prefix": "ENV_NO_PERMISSIONS",
+        "body": [
+            "ENV_NO_PERMISSIONS$0"
+        ],
+        "description": "ENV_NO_PERMISSIONS"
+    },
+    "ENV_THROTTLE": {
+        "prefix": "ENV_THROTTLE",
+        "body": [
+            "ENV_THROTTLE$0"
+        ],
+        "description": "ENV_THROTTLE"
+    },
+    "ENV_VALIDATION_FAIL": {
+        "prefix": "ENV_VALIDATION_FAIL",
+        "body": [
+            "ENV_VALIDATION_FAIL$0"
+        ],
+        "description": "ENV_VALIDATION_FAIL"
     },
     "EOF": {
         "prefix": "EOF",
@@ -1385,6 +1420,13 @@
         ],
         "description": "HTTP_CUSTOM_HEADER"
     },
+    "HTTP_EXTENDED_ERROR": {
+        "prefix": "HTTP_EXTENDED_ERROR",
+        "body": [
+            "HTTP_EXTENDED_ERROR$0"
+        ],
+        "description": "HTTP_EXTENDED_ERROR"
+    },
     "HTTP_METHOD": {
         "prefix": "HTTP_METHOD",
         "body": [
@@ -1426,6 +1468,83 @@
             "HTTP_VERIFY_CERT$0"
         ],
         "description": "HTTP_VERIFY_CERT"
+    },
+    "IMG_USE_BAKED_AUX1": {
+        "prefix": "IMG_USE_BAKED_AUX1",
+        "body": [
+            "IMG_USE_BAKED_AUX1$0"
+        ],
+        "description": "IMG_USE_BAKED_AUX1"
+    },
+    "IMG_USE_BAKED_AUX2": {
+        "prefix": "IMG_USE_BAKED_AUX2",
+        "body": [
+            "IMG_USE_BAKED_AUX2$0"
+        ],
+        "description": "IMG_USE_BAKED_AUX2"
+    },
+    "IMG_USE_BAKED_AUX3": {
+        "prefix": "IMG_USE_BAKED_AUX3",
+        "body": [
+            "IMG_USE_BAKED_AUX3$0"
+        ],
+        "description": "IMG_USE_BAKED_AUX3"
+    },
+    "IMG_USE_BAKED_EYES": {
+        "prefix": "IMG_USE_BAKED_EYES",
+        "body": [
+            "IMG_USE_BAKED_EYES$0"
+        ],
+        "description": "IMG_USE_BAKED_EYES"
+    },
+    "IMG_USED_BAKED_HAIR": {
+        "prefix": "IMG_USE_BAKED_HAIR",
+        "body": [
+            "IMG_USE_BAKED_HAIR$0"
+        ],
+        "description": "IMG_USE_BAKED_HAIR"
+    },
+    "IMG_USE_BAKED_HEAD": {
+        "prefix": "IMG_USE_BAKED_HEAD",
+        "body": [
+            "IMG_USE_BAKED_HEAD$0"
+        ],
+        "description": "IMG_USE_BAKED_HEAD"
+    },
+    "IMG_USE_BAKED_LEFTARM": {
+        "prefix": "IMG_USE_BAKED_LEFTARM",
+        "body": [
+            "IMG_USE_BAKED_LEFTARM$0"
+        ],
+        "description": "IMG_USE_BAKED_LEFTARM"
+    },
+    "IMG_USE_BAKED_LEFTLEG": {
+        "prefix": "IMG_USE_BAKED_LEFTLEG",
+        "body": [
+            "IMG_USE_BAKED_LEFTLEG$0"
+        ],
+        "description": "IMG_USE_BAKED_LEFTLEG"
+    },
+    "IMG_USE_BAKED_LOWER": {
+        "prefix": "IMG_USE_BAKED_LOWER",
+        "body": [
+            "IMG_USE_BAKED_LOWER$0"
+        ],
+        "description": "IMG_USE_BAKED_LOWER"
+    },
+    "IMG_USE_BAKED_SKIRT": {
+        "prefix": "IMG_USE_BAKED_SKIRT",
+        "body": [
+            "IMG_USE_BAKED_SKIRT$0"
+        ],
+        "description": "IMG_USE_BAKED_SKIRT"
+    },
+    "IMG_USE_BAKED_UPPER": {
+        "prefix": "IMG_USE_BAKED_UPPER",
+        "body": [
+            "IMG_USE_BAKED_UPPER$0"
+        ],
+        "description": "IMG_USE_BAKED_UPPER"
     },
     "INVALID_AMOUNT": {
         "prefix": "INVALID_AMOUNT",
@@ -1749,6 +1868,13 @@
         ],
         "description": "The source agent does not have enough L$ for the transfer"
     },
+    "LINKSETDATA_DELETE": {
+        "prefix": "LINKSETDATA_DELETE",
+        "body": [
+            "LINKSETDATA_DELETE$0"
+        ],
+        "description": "A key in the linkset's datastore has been deleted. Either through a call to llLinksetDataDelete or llLinksetDataWrite with an empty value."
+    },
     "LINKSETDATA_EMEMORY": {
         "prefix": "LINKSETDATA_EMEMORY",
         "body": [
@@ -1790,6 +1916,20 @@
             "LINKSETDATA_OK$0"
         ],
         "description": "The name:value pair was written to the datastore."
+    },
+    "LINKSETDATA_RESET": {
+        "prefix": "LINKSETDATA_RESET",
+        "body": [
+            "LINKSETDATA_RESET$0"
+        ],
+        "description": "The linkset's datastore has been cleared by a call to llLinksetDataReset."
+    },
+    "LINKSETDATA_UPDATE": {
+        "prefix": "LINKSETDATA_UPDATE",
+        "body": [
+            "LINKSETDATA_UPDATE$0"
+        ],
+        "description": "A key in the linkset's datastore has been assigned a new value with llLinksetDataWrite."
     },
     "LINK_ALL_CHILDREN": {
         "prefix": "LINK_ALL_CHILDREN",
@@ -1903,13 +2043,6 @@
         ],
         "description": "LOOP"
     },
-    "LlGetGroup": {
-        "prefix": "LlGetGroup",
-        "body": [
-            "LlGetGroup$0"
-        ],
-        "description": "LlGetGroup"
-    },
     "MASK_BASE": {
         "prefix": "MASK_BASE",
         "body": [
@@ -1959,6 +2092,27 @@
         ],
         "description": "NULL_KEY"
     },
+    "OBJECT_ACCOUNT_LEVEL": {
+        "prefix": "OBJECT_ACCOUNT_LEVEL",
+        "body": [
+            "OBJECT_ACCOUNT_LEVEL$0"
+        ],
+        "description": "OBJECT_ACCOUNT_LEVEL"
+    },
+    "OBJECT_ANIMATED_COUNT": {
+        "prefix": "OBJECT_ANIMATED_COUNT",
+        "body": [
+            "OBJECT_ANIMATED_COUNT$0"
+        ],
+        "description": "OBJECT_ANIMATED_COUNT"
+    },
+    "OBJECT_ANIMATED_SLOTS_AVAILABLE": {
+        "prefix": "OBJECT_ANIMATED_SLOTS_AVAILABLE",
+        "body": [
+            "OBJECT_ANIMATED_SLOTS_AVAILABLE$0"
+        ],
+        "description": "OBJECT_ANIMATED_SLOTS_AVAILABLE"
+    },
     "OBJECT_ATTACHED_POINT": {
         "prefix": "OBJECT_ATTACHED_POINT",
         "body": [
@@ -1994,6 +2148,13 @@
         ],
         "description": "OBJECT_CLICK_ACTION"
     },
+    "OBJECT_CREATION_TIME": {
+        "prefix": "OBJECT_CREATION_TIME",
+        "body": [
+            "OBJECT_CREATION_TIME$0"
+        ],
+        "description": "OBJECT_CREATION_TIME"
+    },
     "OBJECT_CREATOR": {
         "prefix": "OBJECT_CREATOR",
         "body": [
@@ -2015,6 +2176,13 @@
         ],
         "description": "OBJECT_GROUP"
     },
+    "OBJECT_GROUP_TAG": {
+        "prefix": "OBJECT_GROUP_TAG",
+        "body": [
+            "OBJECT_GROUP_TAG$0"
+        ],
+        "description": "OBJECT_GROUP_TAG"
+    },
     "OBJECT_HOVER_HEIGHT": {
         "prefix": "OBJECT_HOVER_HEIGHT",
         "body": [
@@ -2028,6 +2196,27 @@
             "OBJECT_LAST_OWNER_ID$0"
         ],
         "description": "OBJECT_LAST_OWNER_ID"
+    },
+    "OBJECT_LINK_NUMBER": {
+        "prefix": "OBJECT_LINK_NUMBER",
+        "body": [
+           "OBJECT_LINK_NUMBER$0"
+        ],
+        "description": "OBJECT_LINK_NUMBER"
+    },
+    "OBJECT_MASS": {
+        "prefix": "OBJECT_MASS",
+        "body": [
+           "OBJECT_MASS$0"
+        ],
+        "description": "OBJECT_MASS"
+    },
+    "OBJECT_MATERIAL": {
+        "prefix": "OBJECT_MATERIAL",
+        "body": [
+           "OBJECT_MATERIAL$0"
+        ],
+        "description": "OBJECT_MATERIAL"
     },
     "OBJECT_NAME": {
         "prefix": "OBJECT_NAME",
@@ -2127,6 +2316,20 @@
         ],
         "description": "Return all objects in the region owned by owner.\nThe script must be owned by the estate owner or an estate manager."
     },
+    "OBJECT_REZZER_KEY": {
+        "prefix": "OBJECT_REZZER_KEY",
+        "body": [
+            "OBJECT_REZZER_KEY$0"
+        ],
+        "description": "OBJECT_REZZER_KEY"
+    },
+    "OBJECT_REZ_TIME": {
+        "prefix": "OBJECT_REZ_TIME",
+        "body": [
+           "OBJECT_REZ_TIME$0"
+        ],
+        "description": "OBJECT_REZ_TIME"
+    },
     "OBJECT_ROOT": {
         "prefix": "OBJECT_ROOT",
         "body": [
@@ -2147,6 +2350,13 @@
             "OBJECT_RUNNING_SCRIPT_COUNT$0"
         ],
         "description": "OBJECT_RUNNING_SCRIPT_COUNT"
+    },
+    "OBJECT_SCALE": {
+        "prefix": "OBJECT_SCALE",
+        "body": [
+           "OBJECT_SCALE$0"
+        ],
+        "description": "OBJECT_SCALE"
     },
     "OBJECT_SCRIPT_MEMORY": {
         "prefix": "OBJECT_SCRIPT_MEMORY",
@@ -2176,6 +2386,13 @@
         ],
         "description": "OBJECT_SERVER_COST"
     },
+    "OBJECT_SIT_COUNT": {
+        "prefix": "OBJECT_SIT_COUNT",
+        "body": [
+            "OBJECT_SIT_COUNT$0"
+        ],
+        "description": "OBJECT_SIT_COUNT"
+    },
     "OBJECT_STREAMING_COST": {
         "prefix": "OBJECT_STREAMING_COST",
         "body": [
@@ -2183,12 +2400,40 @@
         ],
         "description": "OBJECT_STREAMING_COST"
     },
+    "OBJECT_TEMP_ATTACHED": {
+        "prefix": "OBJECT_TEMP_ATTACHED",
+        "body": [
+            "OBJECT_TEMP_ATTACHED$0"
+        ],
+        "description": "OBJECT_TEMP_ATTACHED"
+    },
     "OBJECT_TEMP_ON_REZ": {
         "prefix": "OBJECT_TEMP_ON_REZ",
         "body": [
             "OBJECT_TEMP_ON_REZ$0"
         ],
         "description": "OBJECT_TEMP_ON_REZ"
+    },
+    "OBJECT_TEXT": {
+        "prefix": "OBJECT_TEXT",
+        "body": [
+           "OBJECT_TEXT$0"
+        ],
+        "description": "OBJECT_TEXT"
+    },
+    "OBJECT_TEXT_ALPHA": {
+        "prefix": "OBJECT_TEXT_ALPHA",
+        "body": [
+           "OBJECT_TEXT_ALPHA$0"
+        ],
+        "description": "OBJECT_TEXT_ALPHA"
+    },
+    "OBJECT_TEXT_COLOR": {
+        "prefix": "OBJECT_TEXT_COLOR",
+        "body": [
+           "OBJECT_TEXT_COLOR$0"
+        ],
+        "description": "OBJECT_TEXT_COLOR"
     },
     "OBJECT_TOTAL_INVENTORY_COUNT": {
         "prefix": "OBJECT_TOTAL_INVENTORY_COUNT",
@@ -2330,6 +2575,13 @@
         ],
         "description": "PARCEL_DETAILS_DESC"
     },
+    "PARCEL_DETAILS_FLAGS": {
+        "prefix": "PARCEL_DETAILS_FLAGS",
+        "body": [
+            "PARCEL_DETAILS_FLAGS$0"
+        ],
+        "description": "PARCEL_DETAILS_FLAGS"
+    },
     "PARCEL_DETAILS_GROUP": {
         "prefix": "PARCEL_DETAILS_GROUP",
         "body": [
@@ -2343,6 +2595,20 @@
             "PARCEL_DETAILS_ID$0"
         ],
         "description": "PARCEL_DETAILS_ID"
+    },
+    "PARCEL_DETAILS_LANDING_LOOKAT": {
+        "prefix": "PARCEL_DETAILS_LANDING_LOOKAT",
+        "body": [
+            "PARCEL_DETAILS_LANDING_LOOKAT$0"
+        ],
+        "description": "PARCEL_DETAILS_LANDING_LOOKAT"
+    },
+    "PARCEL_DETAILS_LANDING_POINT": {
+        "prefix": "PARCEL_DETAILS_LANDING_POINT",
+        "body": [
+            "PARCEL_DETAILS_LANDING_POINT$0"
+        ],
+        "description": "PARCEL_DETAILS_LANDING_POINT"
     },
     "PARCEL_DETAILS_NAME": {
         "prefix": "PARCEL_DETAILS_NAME",
@@ -2358,12 +2624,40 @@
         ],
         "description": "PARCEL_DETAILS_OWNER"
     },
+    "PARCEL_DETAILS_PRIM_CAPACITY": {
+        "prefix": "PARCEL_DETAILS_PRIM_CAPACITY",
+        "body": [
+            "PARCEL_DETAILS_PRIM_CAPACITY$0"
+        ],
+        "description": "PARCEL_DETAILS_PRIM_CAPACITY"
+    },
+    "PARCEL_DETAILS_PRIM_USED": {
+        "prefix": "PARCEL_DETAILS_PRIM_USED",
+        "body": [
+            "PARCEL_DETAILS_PRIM_USED$0"
+        ],
+        "description": "PARCEL_DETAILS_PRIM_USED"
+    },
+    "PARCEL_DETAILS_SCRIPT_DANGER": {
+        "prefix": "PARCEL_DETAILS_SCRIPT_DANGER",
+        "body": [
+            "PARCEL_DETAILS_SCRIPT_DANGER$0"
+        ],
+        "description": "PARCEL_DETAILS_SCRIPT_DANGER"
+    },
     "PARCEL_DETAILS_SEE_AVATARS": {
         "prefix": "PARCEL_DETAILS_SEE_AVATARS",
         "body": [
             "PARCEL_DETAILS_SEE_AVATARS$0"
         ],
         "description": "PARCEL_DETAILS_SEE_AVATARS"
+    },
+    "PARCEL_DETAILS_TP_ROUTING": {
+        "prefix": "PARCEL_DETAILS_TP_ROUTING",
+        "body": [
+            "PARCEL_DETAILS_TP_ROUTING$0"
+        ],
+        "description": "PARCEL_DETAILS_TP_ROUTING"
     },
     "PARCEL_FLAG_ALLOW_ALL_OBJECT_ENTRY": {
         "prefix": "PARCEL_FLAG_ALLOW_ALL_OBJECT_ENTRY",
@@ -3163,6 +3457,48 @@
         ],
         "description": "PRIM_MEDIA_HOME_URL"
     },
+    "PRIM_MEDIA_MAX_HEIGHT_PIXELS": {
+        "prefix": "PRIM_MEDIA_MAX_HEIGHT_PIXELS",
+        "body": [
+            "PRIM_MEDIA_MAX_HEIGHT_PIXELS$0"
+        ],
+        "description": "PRIM_MEDIA_MAX_HEIGHT_PIXELS"
+    },
+    "PRIM_MEDIA_MAX_URL_LENGTH": {
+        "prefix": "PRIM_MEDIA_MAX_URL_LENGTH",
+        "body": [
+            "PRIM_MEDIA_MAX_URL_LENGTH$0"
+        ],
+        "description": "PRIM_MEDIA_MAX_URL_LENGTH"
+    },
+    "PRIM_MEDIA_MAX_WHITELIST_COUNT": {
+        "prefix": "PRIM_MEDIA_MAX_WHITELIST_COUNT",
+        "body": [
+            "PRIM_MEDIA_MAX_WHITELIST_COUNT$0"
+        ],
+        "description": "PRIM_MEDIA_MAX_WHITELIST_COUNT"
+    },
+    "PRIM_MEDIA_MAX_WHITELIST_SIZE": {
+        "prefix": "PRIM_MEDIA_MAX_WHITELIST_SIZE",
+        "body": [
+            "PRIM_MEDIA_MAX_WHITELIST_SIZE$0"
+        ],
+        "description": "PRIM_MEDIA_MAX_WHITELIST_SIZE"
+    },
+    "PRIM_MEDIA_MAX_WIDTH_PIXELS": {
+        "prefix": "PRIM_MEDIA_MAX_WIDTH_PIXELS",
+        "body": [
+            "PRIM_MEDIA_MAX_WIDTH_PIXELS$0"
+        ],
+        "description": "PRIM_MEDIA_MAX_WIDTH_PIXELS"
+    },
+    "PRIM_MEDIA_PARAM_MAX": {
+        "prefix": "PRIM_MEDIA_PARAM_MAX",
+        "body": [
+            "PRIM_MEDIA_PARAM_MAX$0"
+        ],
+        "description": "PRIM_MEDIA_PARAM_MAX"
+    },
     "PRIM_MEDIA_PERMS_CONTROL": {
         "prefix": "PRIM_MEDIA_PERMS_CONTROL",
         "body": [
@@ -3309,6 +3645,13 @@
             "PRIM_POS_LOCAL$0"
         ],
         "description": "PRIM_POS_LOCAL"
+    },
+    "PRIM_PROJECTOR": {
+        "prefix": "PRIM_PROJECTOR",
+        "body": [
+            "PRIM_PROJECTOR$0"
+        ],
+        "description": "PRIM_PROJECTOR"
     },
     "PRIM_ROTATION": {
         "prefix": "PRIM_ROTATION",
@@ -3554,6 +3897,342 @@
             "PROFILE_SCRIPT_MEMORY$0"
         ],
         "description": "Enables memory profiling"
+    },
+    "PSYS_PART_BF_DEST_COLOR": {
+        "prefix": "PSYS_PART_BF_DEST_COLOR",
+        "body": [
+             "PSYS_PART_BF_DEST_COLOR$0"
+        ],
+        "description": "PSYS_PART_BF_DEST_COLOR"
+    },
+    "PSYS_PART_BF_ONE": {
+        "prefix": "PSYS_PART_BF_ONE",
+        "body": [
+             "PSYS_PART_BF_ONE$0"
+        ],
+        "description": "PSYS_PART_BF_ONE"
+    },
+    "PSYS_PART_BF_ONE_MINUS_DEST_COLOR": {
+        "prefix": "PSYS_PART_BF_ONE_MINUS_DEST_COLOR",
+        "body": [
+             "PSYS_PART_BF_ONE_MINUS_DEST_COLOR$0"
+        ],
+        "description": "PSYS_PART_BF_ONE_MINUS_DEST_COLOR"
+    },
+    "PSYS_PART_BF_ONE_MINUS_SOURCE_ALPHA": {
+        "prefix": "PSYS_PART_BF_ONE_MINUS_SOURCE_ALPHA",
+        "body": [
+             "PSYS_PART_BF_ONE_MINUS_SOURCE_ALPHA$0"
+        ],
+        "description": "PSYS_PART_BF_ONE_MINUS_SOURCE_ALPHA"
+    },
+    "PSYS_PART_BF_ONE_MINUS_SOURCE_COLOR": {
+        "prefix": "PSYS_PART_BF_ONE_MINUS_SOURCE_COLOR",
+        "body": [
+             "PSYS_PART_BF_ONE_MINUS_SOURCE_COLOR$0"
+        ],
+        "description": "PSYS_PART_BF_ONE_MINUS_SOURCE_COLOR"
+    },
+    "PSYS_PART_BF_SOURCE_ALPHA": {
+        "prefix": "PSYS_PART_BF_SOURCE_ALPHA",
+        "body": [
+             "PSYS_PART_BF_SOURCE_ALPHA$0"
+        ],
+        "description": "PSYS_PART_BF_SOURCE_ALPHA"
+    },
+    "PSYS_PART_BF_SOURCE_COLOR": {
+        "prefix": "PSYS_PART_BF_SOURCE_COLOR",
+        "body": [
+             "PSYS_PART_BF_SOURCE_COLOR$0"
+        ],
+        "description": "PSYS_PART_BF_SOURCE_COLOR"
+    },
+    "PSYS_PART_BF_ZERO": {
+        "prefix": "PSYS_PART_BF_ZERO",
+        "body": [
+             "PSYS_PART_BF_ZERO$0"
+        ],
+        "description": "PSYS_PART_BF_ZERO"
+    },
+    "PSYS_PART_BLEND_FUNC_DEST": {
+        "prefix": "PSYS_PART_BLEND_FUNC_DEST",
+        "body": [
+             "PSYS_PART_BLEND_FUNC_DEST$0"
+        ],
+        "description": "PSYS_PART_BLEND_FUNC_DEST"
+    },
+    "PSYS_PART_BLEND_FUNC_SOURCE": {
+        "prefix": "PSYS_PART_BLEND_FUNC_SOURCE",
+        "body": [
+             "PSYS_PART_BLEND_FUNC_SOURCE$0"
+        ],
+        "description": "PSYS_PART_BLEND_FUNC_SOURCE"
+    },
+    "PSYS_PART_BOUNCE_MASK": {
+        "prefix": "PSYS_PART_BOUNCE_MASK",
+        "body": [
+             "PSYS_PART_BOUNCE_MASK$0"
+        ],
+        "description": "PSYS_PART_BOUNCE_MASK"
+    },
+    "PSYS_PART_EMISSIVE_MASK": {
+        "prefix": "PSYS_PART_EMISSIVE_MASK",
+        "body": [
+             "PSYS_PART_EMISSIVE_MASK$0"
+        ],
+        "description": "PSYS_PART_EMISSIVE_MASK"
+    },
+    "PSYS_PART_END_ALPHA": {
+        "prefix": "PSYS_PART_END_ALPHA",
+        "body": [
+             "PSYS_PART_END_ALPHA$0"
+        ],
+        "description": "PSYS_PART_END_ALPHA"
+    },
+    "PSYS_PART_END_COLOR": {
+        "prefix": "PSYS_PART_END_COLOR",
+        "body": [
+             "PSYS_PART_END_COLOR$0"
+        ],
+        "description": "PSYS_PART_END_COLOR"
+    },
+    "PSYS_PART_END_GLOW": {
+        "prefix": "PSYS_PART_END_GLOW",
+        "body": [
+             "PSYS_PART_END_GLOW$0"
+        ],
+        "description": "PSYS_PART_END_GLOW"
+    },
+    "PSYS_PART_END_SCALE": {
+        "prefix": "PSYS_PART_END_SCALE",
+        "body": [
+             "PSYS_PART_END_SCALE$0"
+        ],
+        "description": "PSYS_PART_END_SCALE"
+    },
+    "PSYS_PART_FLAGS": {
+        "prefix": "PSYS_PART_FLAGS",
+        "body": [
+             "PSYS_PART_FLAGS$0"
+        ],
+        "description": "PSYS_PART_FLAGS"
+    },
+    "PSYS_PART_FOLLOW_SRC_MASK": {
+        "prefix": "PSYS_PART_FOLLOW_SRC_MASK",
+        "body": [
+             "PSYS_PART_FOLLOW_SRC_MASK$0"
+        ],
+        "description": "PSYS_PART_FOLLOW_SRC_MASK"
+    },
+    "PSYS_PART_FOLLOW_VELOCITY_MASK": {
+        "prefix": "PSYS_PART_FOLLOW_VELOCITY_MASK",
+        "body": [
+             "PSYS_PART_FOLLOW_VELOCITY_MASK$0"
+        ],
+        "description": "PSYS_PART_FOLLOW_VELOCITY_MASK"
+    },
+    "PSYS_PART_INTERP_COLOR_MASK": {
+        "prefix": "PSYS_PART_INTERP_COLOR_MASK",
+        "body": [
+             "PSYS_PART_INTERP_COLOR_MASK$0"
+        ],
+        "description": "PSYS_PART_INTERP_COLOR_MASK"
+    },
+    "PSYS_PART_INTERP_SCALE_MASK": {
+        "prefix": "PSYS_PART_INTERP_SCALE_MASK",
+        "body": [
+             "PSYS_PART_INTERP_SCALE_MASK$0"
+        ],
+        "description": "PSYS_PART_INTERP_SCALE_MASK"
+    },
+    "PSYS_PART_MAX_AGE": {
+        "prefix": "PSYS_PART_MAX_AGE",
+        "body": [
+             "PSYS_PART_MAX_AGE$0"
+        ],
+        "description": "PSYS_PART_MAX_AGE"
+    },
+    "PSYS_PART_RIBBON_MASK": {
+        "prefix": "PSYS_PART_RIBBON_MASK",
+        "body": [
+             "PSYS_PART_RIBBON_MASK$0"
+        ],
+        "description": "PSYS_PART_RIBBON_MASK"
+    },
+    "PSYS_PART_START_ALPHA": {
+        "prefix": "PSYS_PART_START_ALPHA",
+        "body": [
+             "PSYS_PART_START_ALPHA$0"
+        ],
+        "description": "PSYS_PART_START_ALPHA"
+    },
+    "PSYS_PART_START_COLOR": {
+        "prefix": "PSYS_PART_START_COLOR",
+        "body": [
+             "PSYS_PART_START_COLOR$0"
+        ],
+        "description": "PSYS_PART_START_COLOR"
+    },
+    "PSYS_PART_START_GLOW": {
+        "prefix": "PSYS_PART_START_GLOW",
+        "body": [
+             "PSYS_PART_START_GLOW$0"
+        ],
+        "description": "PSYS_PART_START_GLOW"
+    },
+    "PSYS_PART_START_SCALE": {
+        "prefix": "PSYS_PART_START_SCALE",
+        "body": [
+             "PSYS_PART_START_SCALE$0"
+        ],
+        "description": "PSYS_PART_START_SCALE"
+    },
+    "PSYS_PART_TARGET_LINEAR_MASK": {
+        "prefix": "PSYS_PART_TARGET_LINEAR_MASK",
+        "body": [
+             "PSYS_PART_TARGET_LINEAR_MASK$0"
+        ],
+        "description": "PSYS_PART_TARGET_LINEAR_MASK"
+    },
+    "PSYS_PART_TARGET_POS_MASK": {
+        "prefix": "PSYS_PART_TARGET_POS_MASK",
+        "body": [
+             "PSYS_PART_TARGET_POS_MASK$0"
+        ],
+        "description": "PSYS_PART_TARGET_POS_MASK"
+    },
+    "PSYS_PART_WIND_MASK": {
+        "prefix": "PSYS_PART_WIND_MASK",
+        "body": [
+             "PSYS_PART_WIND_MASK$0"
+        ],
+        "description": "PSYS_PART_WIND_MASK"
+    },
+    "PSYS_SRC_ACCEL": {
+        "prefix": "PSYS_SRC_ACCEL",
+        "body": [
+             "PSYS_SRC_ACCEL$0"
+        ],
+        "description": "PSYS_SRC_ACCEL"
+    },
+    "PSYS_SRC_ANGLE_BEGIN": {
+        "prefix": "PSYS_SRC_ANGLE_BEGIN",
+        "body": [
+             "PSYS_SRC_ANGLE_BEGIN$0"
+        ],
+        "description": "PSYS_SRC_ANGLE_BEGIN"
+    },
+    "PSYS_SRC_ANGLE_END": {
+        "prefix": "PSYS_SRC_ANGLE_END",
+        "body": [
+             "PSYS_SRC_ANGLE_END$0"
+        ],
+        "description": "PSYS_SRC_ANGLE_END"
+    },
+    "PSYS_SRC_BURST_PART_COUNT": {
+        "prefix": "PSYS_SRC_BURST_PART_COUNT",
+        "body": [
+             "PSYS_SRC_BURST_PART_COUNT$0"
+        ],
+        "description": "PSYS_SRC_BURST_PART_COUNT"
+    },
+    "PSYS_SRC_BURST_RADIUS": {
+        "prefix": "PSYS_SRC_BURST_RADIUS",
+        "body": [
+             "PSYS_SRC_BURST_RADIUS$0"
+        ],
+        "description": "PSYS_SRC_BURST_RADIUS"
+    },
+    "PSYS_SRC_BURST_RATE": {
+        "prefix": "PSYS_SRC_BURST_RATE",
+        "body": [
+             "PSYS_SRC_BURST_RATE$0"
+        ],
+        "description": "PSYS_SRC_BURST_RATE"
+    },
+    "PSYS_SRC_BURST_SPEED_MAX": {
+        "prefix": "PSYS_SRC_BURST_SPEED_MAX",
+        "body": [
+             "PSYS_SRC_BURST_SPEED_MAX$0"
+        ],
+        "description": "PSYS_SRC_BURST_SPEED_MAX"
+    },
+    "PSYS_SRC_BURST_SPEED_MIN": {
+        "prefix": "PSYS_SRC_BURST_SPEED_MIN",
+        "body": [
+             "PSYS_SRC_BURST_SPEED_MIN$0"
+        ],
+        "description": "PSYS_SRC_BURST_SPEED_MIN"
+    },
+    "PSYS_SRC_MAX_AGE": {
+        "prefix": "PSYS_SRC_MAX_AGE",
+        "body": [
+             "PSYS_SRC_MAX_AGE$0"
+        ],
+        "description": "PSYS_SRC_MAX_AGE"
+    },
+    "PSYS_SRC_OMEGA": {
+        "prefix": "PSYS_SRC_OMEGA",
+        "body": [
+             "PSYS_SRC_OMEGA$0"
+        ],
+        "description": "PSYS_SRC_OMEGA"
+    },
+    "PSYS_SRC_PATTERN": {
+        "prefix": "PSYS_SRC_PATTERN",
+        "body": [
+             "PSYS_SRC_PATTERN$0"
+        ],
+        "description": "PSYS_SRC_PATTERN"
+    },
+    "PSYS_SRC_PATTERN_ANGLE": {
+        "prefix": "PSYS_SRC_PATTERN_ANGLE",
+        "body": [
+             "PSYS_SRC_PATTERN_ANGLE$0"
+        ],
+        "description": "PSYS_SRC_PATTERN_ANGLE"
+    },
+    "PSYS_SRC_PATTERN_ANGLE_CONE": {
+        "prefix": "PSYS_SRC_PATTERN_ANGLE_CONE",
+        "body": [
+             "PSYS_SRC_PATTERN_ANGLE_CONE$0"
+        ],
+        "description": "PSYS_SRC_PATTERN_ANGLE_CONE"
+    },
+    "PSYS_SRC_PATTERN_ANGLE_CONE_EMPTY": {
+        "prefix": "PSYS_SRC_PATTERN_ANGLE_CONE_EMPTY",
+        "body": [
+             "PSYS_SRC_PATTERN_ANGLE_CONE_EMPTY$0"
+        ],
+        "description": "PSYS_SRC_PATTERN_ANGLE_CONE_EMPTY"
+    },
+    "PSYS_SRC_PATTERN_DROP": {
+        "prefix": "PSYS_SRC_PATTERN_DROP",
+        "body": [
+             "PSYS_SRC_PATTERN_DROP$0"
+        ],
+        "description": "PSYS_SRC_PATTERN_DROP"
+    },
+    "PSYS_SRC_PATTERN_EXPLODE": {
+        "prefix": "PSYS_SRC_PATTERN_EXPLODE",
+        "body": [
+             "PSYS_SRC_PATTERN_EXPLODE$0"
+        ],
+        "description": "PSYS_SRC_PATTERN_EXPLODE"
+    },
+    "PSYS_SRC_TARGET_KEY": {
+        "prefix": "PSYS_SRC_TARGET_KEY",
+        "body": [
+             "PSYS_SRC_TARGET_KEY$0"
+        ],
+        "description": "PSYS_SRC_TARGET_KEY"
+    },
+    "PSYS_SRC_TEXTURE": {
+        "prefix": "PSYS_SRC_TEXTURE",
+        "body": [
+             "PSYS_SRC_TEXTURE$0"
+        ],
+        "description": "PSYS_SRC_TEXTURE"
     },
     "PUBLIC_CHANNEL": {
         "prefix": "PUBLIC_CHANNEL",
@@ -3807,6 +4486,13 @@
         ],
         "description": "REGION_FLAG_BLOCK_FLY"
     },
+    "REGION_FLAG_BLOCK_FLYOVER": {
+        "prefix": "REGION_FLAG_BLOCK_FLYOVER",
+        "body": [
+            "REGION_FLAG_BLOCK_FLYOVER$0"
+        ],
+        "description": "REGION_FLAG_BLOCK_FLYOVER"
+    },
     "REGION_FLAG_BLOCK_TERRAFORM": {
         "prefix": "REGION_FLAG_BLOCK_TERRAFORM",
         "body": [
@@ -3926,12 +4612,68 @@
         ],
         "description": "The % of pathfinding characters updated each frame, averaged over the last minute. The value corresponds to the \"Characters Updated\" stat in the viewer's Statistics Bar.\n- Possible Return: [0.0, 100.0]"
     },
+    "SIT_INVALID_AGENT": {
+        "prefix": "SIT_INVALID_AGENT",
+        "body": [
+            "SIT_INVALID_AGENT$0"
+        ],
+        "description": "Unable to find specified agent."
+    },
+    "SIT_INVALID_LINK": {
+        "prefix": "SIT_INVALID_LINK",
+        "body": [
+            "SIT_INVALID_LINK$0"
+        ],
+        "description": "Unable to find specified link or the link constant would return multiple prims."
+    },
+    "SIT_INVALID_OBJECT": {
+        "prefix": "SIT_INVALID_OBJECT",
+        "body": [
+            "SIT_INVALID_OBJECT$0"
+        ],
+        "description": "This value is returned if the llSitOnLink is trying to force the user to sit on something that cannot be sat upon (such as an attachment)."
+    },
+    "SIT_NOT_EXPERIENCE": {
+        "prefix": "SIT_NOT_EXPERIENCE",
+        "body": [
+            "SIT_NOT_EXPERIENCE$0"
+        ],
+        "description": "The script is not running as part of an experience with a valid experience key or the experience is not allowed at your location."
+    },
+    "SIT_NO_ACCESS": {
+        "prefix": "SIT_NO_ACCESS",
+        "body": [
+            "SIT_NO_ACCESS$0"
+        ],
+        "description": "The avatar does not have access to the parcel that the prim running this script is located in."
+    },
+    "SIT_NO_EXPERIENCE_PERMISSION": {
+        "prefix": "SIT_NO_EXPERIENCE_PERMISSION",
+        "body": [
+            "SIT_NO_EXPERIENCE_PERMISSION$0"
+        ],
+        "description": "The agent has not granted permission."
+    },
+    "SIT_NO_SIT_TARGET": {
+        "prefix": "SIT_NO_SIT_TARGET",
+        "body": [
+            "SIT_NO_SIT_TARGET$0"
+        ],
+        "description": "Unable to find an open sit target."
+    },
     "SKY_AMBIENT": {
         "prefix": "SKY_AMBIENT",
         "body": [
             "SKY_AMBIENT$0"
         ],
         "description": "vector ambient_color\n\nThe ambient color of the environment."
+    },
+    "SKY_BLUE": {
+        "prefix": "SKY_BLUE",
+        "body": [
+            "SKY_BLUE$0"
+        ],
+        "description": "SKY_BLUE"
     },
     "SKY_CLOUDS": {
         "prefix": "SKY_CLOUDS",
@@ -3967,6 +4709,13 @@
             "SKY_GLOW$0"
         ],
         "description": "float glow_size, float glow_focus\n\nGlow applied to the sun and moon.\n- glow_size: size of glow effect,\n  range = [0.2, 40]\n- glow_focus: focus of glow effect\n  Range [-10, 10]"
+    },
+    "SKY_HAZE": {
+        "prefix": "SKY_HAZE",
+        "body": [
+            "SKY_HAZE$0"
+        ],
+        "description": "SKY_HAZE"
     },
     "SKY_LIGHT": {
         "prefix": "SKY_LIGHT",
@@ -4017,6 +4766,13 @@
         ],
         "description": "rotation rot, float scale, vector sun_color, integer is_default_texture, vector direction, vector ambient_color, vector diffuse_color\n\nDetailed sun information\n- rot: The current rotation applied to the sun.\n  Normalized rotation.\n- scale: The current scale applied to the sun's texture\n  range = [0.25, 20]\n- sun_color: The sun's color.\n range = [<0,0,0>, <1,1,1>]\n- is_default_texture: 1 if the sun texture is set to the default. 0 otherwise\n- direction: A unit vector pointing at the sun.\n- ambient_color: The ambient color of the sun.\n- diffuse_color: The diffuse color applied to the sun."
     },
+    "SKY_SUN_TEXTURE": {
+        "prefix": "SKY_SUN_TEXTURE",
+        "body": [
+            "SKY_SUN_TEXTURE$0"
+        ],
+        "description": "SKY_SUN_TEXTURE"
+    },
     "SKY_TEXTURE_DEFAULTS": {
         "prefix": "SKY_TEXTURE_DEFAULTS",
         "body": [
@@ -4037,6 +4793,34 @@
             "SMOOTH$0"
         ],
         "description": "SMOOTH"
+    },
+    "SOUND_LOOP": {
+        "prefix": "SOUND_LOOP",
+        "body": [
+            "SOUND_LOOP$0"
+        ],
+        "description": "SOUND_LOOP"
+    },
+    "SOUND_PLAY": {
+        "prefix": "SOUND_PLAY",
+        "body": [
+            "SOUND_PLAY$0"
+        ],
+        "description": "SOUND_PLAY"
+    },
+    "SOUND_SYNC": {
+        "prefix": "SOUND_SYNC",
+        "body": [
+            "SOUND_SYNC$0"
+        ],
+        "description": "SOUND_SYNC"
+    },
+    "SOUND_TRIGGER": {
+        "prefix": "SOUND_TRIGGER",
+        "body": [
+            "SOUND_TRIGGER$0"
+        ],
+        "description": "SOUND_TRIGGER"
     },
     "SQRT2": {
         "prefix": "SQRT2",
@@ -4079,6 +4863,13 @@
             "STATUS_DIE_AT_EDGE$0"
         ],
         "description": "STATUS_DIE_AT_EDGE"
+    },
+    "STATUS_DIE_AT_NO_ENTRY": {
+        "prefix": "STATUS_DIE_AT_NO_ENTRY",
+        "body": [
+            "STATUS_DIE_AT_NO_ENTRY$0"
+        ],
+        "description": "STATUS_DIE_AT_NO_ENTRY"
     },
     "STATUS_INTERNAL_ERROR": {
         "prefix": "STATUS_INTERNAL_ERROR",
@@ -4199,6 +4990,13 @@
         ],
         "description": "STRING_TRIM_TAIL"
     },
+    "TARGETED_EMAIL_OBJECT_OWNER": {
+        "prefix": "TARGETED_EMAIL_OBJECT_OWNER",
+        "body": [
+            "TARGETED_EMAIL_OBJECT_OWNER$0"
+        ],
+        "description": "TARGETED_EMAIL_OBJECT_OWNER"
+    },
     "TEXTURE_BLANK": {
         "prefix": "TEXTURE_BLANK",
         "body": [
@@ -4261,6 +5059,27 @@
             "TOUCH_INVALID_VECTOR$0"
         ],
         "description": "TOUCH_INVALID_VECTOR"
+    },
+    "TP_ROUTING_BLOCKED": {
+        "prefix": "TP_ROUTING_BLOCKED",
+        "body": [
+            "TP_ROUTING_BLOCKED$0"
+        ],
+        "description": "TP_ROUTING_BLOCKED"
+    },
+    "TP_ROUTING_FREE": {
+        "prefix": "TP_ROUTING_FREE",
+        "body": [
+            "TP_ROUTING_FREE$0"
+        ],
+        "description": "TP_ROUTING_FREE"
+    },
+    "TP_ROUTING_LANDINGP": {
+        "prefix": "TP_ROUTING_LANDINGP",
+        "body": [
+            "TP_ROUTING_LANDINGP$0"
+        ],
+        "description": "TP_ROUTING_LANDINGP"
     },
     "TRANSFERS_DISABLED": {
         "prefix": "TRANSFERS_DISABLED",
