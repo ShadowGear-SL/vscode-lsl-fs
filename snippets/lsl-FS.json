@@ -1,15 +1,15 @@
 {
-    "Pragma Onse": {
+    "Pragma Once": {
         "prefix": "pragma once",
         "body": [
             "#ifndef ${1:FILE_INDENTIFIER}",
-            "#define ${2:FILE_INDENTIFIER}",
+            "#define ${1:FILE_INDENTIFIER}",
             "",
             "",
             "$0",
             "",
             "",
-            "#endif // ${3:FILE_INDENTIFIER}",
+            "#endif // ${1:FILE_INDENTIFIER}",
             ""
         ],
         "description": "pragma once implement"
