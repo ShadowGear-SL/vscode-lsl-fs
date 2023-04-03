@@ -1,14 +1,4 @@
 {
-    "attack Event": {
-        "prefix": "attach",
-        "body": [
-            "attach( key ${1:id} )",
-            "{",
-            "\t$0",
-            "}"
-        ],
-        "description": "Triggered in an object when the object attaches or detaches from agent.\n• key id – the avatar if attached, if not attached NULL_KEY."
-    },
     "at_rot_target Event": {
         "prefix": "at_rot_target",
         "body": [
@@ -28,6 +18,16 @@
             "}"
         ],
         "description": "Result of llTarget library function call\n• integer tnum – llTarget return\n• vector targetpos – llTarget position parameter\n• vector ourpos – current position (similar to llGetPos)"
+    },
+    "attach Event": {
+        "prefix": "attach",
+        "body": [
+            "attach( key ${1:id} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Triggered in an object when the object attaches or detaches from agent.\n• key id – the avatar if attached, if not attached NULL_KEY."
     },
     "changed Event": {
         "prefix": "changed",
@@ -179,6 +179,16 @@
         ],
         "description": "29 Event ID Triggered when the script receives a link message that was sent by a call to llMessageLinked. llMessageLinked is used to send messages from one script to another.\n• integer sender_num – The link number of the prim that contained the script that called llMessageLinked.\n• integer num – Second parameter of the llMessageLinked call.\n• string str – The message that was sent from the script that called llMessageLinked.\n• key id – Fourth parameter of the llMessageLinked call.\nid is often used as a second string field (in LSL the key type is implemented as a string with just custom operators). Typecasting between string and key types has no effect on the data contained. The sizes of str and id are only limited by available script memory."
     },
+    "linkset_data Event": {
+        "prefix": "linkset_data",
+        "body": [
+            "linkset_data( integer ${1:action}, string ${2:name} , string ${3:value} )",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "The linkset_data event fires in all scripts in a linkset whenever the datastore has been modified through a call to one of the llLinksetData functions."
+    },
     "listen Event": {
         "prefix": "listen",
         "body": [
@@ -219,6 +229,16 @@
         ],
         "description": "Triggered when task begins moving"
     },
+    "no_sensor Event": {
+        "prefix": "no_sensor",
+        "body": [
+            "no_sensor()",
+            "{",
+            "\t$0",
+            "}"
+        ],
+        "description": "Result of a call to llSensor or llSensorRepeat."
+    },
     "not_at_rot_target Event": {
         "prefix": "not_at_rot_target",
         "body": [
@@ -238,16 +258,6 @@
             "}"
         ],
         "description": "Triggered if an object has not yet reached the target set by the call to llTarget.\nThis event may be triggered multiple times if the target has not been reached."
-    },
-    "no_sensor Event": {
-        "prefix": "no_sensor",
-        "body": [
-            "no_sensor()",
-            "{",
-            "\t$0",
-            "}"
-        ],
-        "description": "Result of a call to llSensor or llSensorRepeat."
     },
     "object_rez Event": {
         "prefix": "object_rez",
@@ -287,7 +297,7 @@
             "\t$0",
             "}"
         ],
-        "description": "Triggered by various XML-RPC calls.\n• integer event_type\n• key channel\n• key message_id\n• string sender\n• integer idata\n• string sdata"
+        "description": "Deprecated. Don't use this! Triggered by various XML-RPC calls.\n• integer event_type\n• key channel\n• key message_id\n• string sender\n• integer idata\n• string sdata"
     },
     "run_time_permissions Event": {
         "prefix": "run_time_permissions",
@@ -378,15 +388,5 @@
             "}"
         ],
         "description": "Triggered when task receives asynchronous data\n• key id – matches the return of the llTransfer* function\n• integer success – TRUE if the transfer succeeded otherwise FALSE.\n• string data – On successful transactions this will contain a CSV of information pertaining to the transaction. In failure, a string will be returned matching one of the error tags below."
-    },
-    "linkset_data Event": {
-        "prefix": "linkset_data",
-        "body": [
-            "linkset_data( integer ${1:action}, string ${2:name} , string ${3:value} )",
-            "{",
-            "\t$0",
-            "}"
-        ],
-        "description": "The linkset_data event fires in all scripts in a linkset whenever the datastore has been modified through a call to one of the llLinksetData functions."
     }
 }
