@@ -1469,6 +1469,13 @@
         ],
         "description": "HTTP_VERIFY_CERT"
     },
+    "IMG_USED_BAKED_HAIR": {
+        "prefix": "IMG_USE_BAKED_HAIR",
+        "body": [
+            "IMG_USE_BAKED_HAIR$0"
+        ],
+        "description": "IMG_USE_BAKED_HAIR"
+    },
     "IMG_USE_BAKED_AUX1": {
         "prefix": "IMG_USE_BAKED_AUX1",
         "body": [
@@ -1496,13 +1503,6 @@
             "IMG_USE_BAKED_EYES$0"
         ],
         "description": "IMG_USE_BAKED_EYES"
-    },
-    "IMG_USED_BAKED_HAIR": {
-        "prefix": "IMG_USE_BAKED_HAIR",
-        "body": [
-            "IMG_USE_BAKED_HAIR$0"
-        ],
-        "description": "IMG_USE_BAKED_HAIR"
     },
     "IMG_USE_BAKED_HEAD": {
         "prefix": "IMG_USE_BAKED_HEAD",
@@ -2200,21 +2200,21 @@
     "OBJECT_LINK_NUMBER": {
         "prefix": "OBJECT_LINK_NUMBER",
         "body": [
-           "OBJECT_LINK_NUMBER$0"
+            "OBJECT_LINK_NUMBER$0"
         ],
         "description": "OBJECT_LINK_NUMBER"
     },
     "OBJECT_MASS": {
         "prefix": "OBJECT_MASS",
         "body": [
-           "OBJECT_MASS$0"
+            "OBJECT_MASS$0"
         ],
         "description": "OBJECT_MASS"
     },
     "OBJECT_MATERIAL": {
         "prefix": "OBJECT_MATERIAL",
         "body": [
-           "OBJECT_MATERIAL$0"
+            "OBJECT_MATERIAL$0"
         ],
         "description": "OBJECT_MATERIAL"
     },
@@ -2326,7 +2326,7 @@
     "OBJECT_REZ_TIME": {
         "prefix": "OBJECT_REZ_TIME",
         "body": [
-           "OBJECT_REZ_TIME$0"
+            "OBJECT_REZ_TIME$0"
         ],
         "description": "OBJECT_REZ_TIME"
     },
@@ -2354,7 +2354,7 @@
     "OBJECT_SCALE": {
         "prefix": "OBJECT_SCALE",
         "body": [
-           "OBJECT_SCALE$0"
+            "OBJECT_SCALE$0"
         ],
         "description": "OBJECT_SCALE"
     },
@@ -2417,21 +2417,21 @@
     "OBJECT_TEXT": {
         "prefix": "OBJECT_TEXT",
         "body": [
-           "OBJECT_TEXT$0"
+            "OBJECT_TEXT$0"
         ],
         "description": "OBJECT_TEXT"
     },
     "OBJECT_TEXT_ALPHA": {
         "prefix": "OBJECT_TEXT_ALPHA",
         "body": [
-           "OBJECT_TEXT_ALPHA$0"
+            "OBJECT_TEXT_ALPHA$0"
         ],
         "description": "OBJECT_TEXT_ALPHA"
     },
     "OBJECT_TEXT_COLOR": {
         "prefix": "OBJECT_TEXT_COLOR",
         "body": [
-           "OBJECT_TEXT_COLOR$0"
+            "OBJECT_TEXT_COLOR$0"
         ],
         "description": "OBJECT_TEXT_COLOR"
     },
@@ -3901,336 +3901,336 @@
     "PSYS_PART_BF_DEST_COLOR": {
         "prefix": "PSYS_PART_BF_DEST_COLOR",
         "body": [
-             "PSYS_PART_BF_DEST_COLOR$0"
+            "PSYS_PART_BF_DEST_COLOR$0"
         ],
         "description": "PSYS_PART_BF_DEST_COLOR"
     },
     "PSYS_PART_BF_ONE": {
         "prefix": "PSYS_PART_BF_ONE",
         "body": [
-             "PSYS_PART_BF_ONE$0"
+            "PSYS_PART_BF_ONE$0"
         ],
         "description": "PSYS_PART_BF_ONE"
     },
     "PSYS_PART_BF_ONE_MINUS_DEST_COLOR": {
         "prefix": "PSYS_PART_BF_ONE_MINUS_DEST_COLOR",
         "body": [
-             "PSYS_PART_BF_ONE_MINUS_DEST_COLOR$0"
+            "PSYS_PART_BF_ONE_MINUS_DEST_COLOR$0"
         ],
         "description": "PSYS_PART_BF_ONE_MINUS_DEST_COLOR"
     },
     "PSYS_PART_BF_ONE_MINUS_SOURCE_ALPHA": {
         "prefix": "PSYS_PART_BF_ONE_MINUS_SOURCE_ALPHA",
         "body": [
-             "PSYS_PART_BF_ONE_MINUS_SOURCE_ALPHA$0"
+            "PSYS_PART_BF_ONE_MINUS_SOURCE_ALPHA$0"
         ],
         "description": "PSYS_PART_BF_ONE_MINUS_SOURCE_ALPHA"
     },
     "PSYS_PART_BF_ONE_MINUS_SOURCE_COLOR": {
         "prefix": "PSYS_PART_BF_ONE_MINUS_SOURCE_COLOR",
         "body": [
-             "PSYS_PART_BF_ONE_MINUS_SOURCE_COLOR$0"
+            "PSYS_PART_BF_ONE_MINUS_SOURCE_COLOR$0"
         ],
         "description": "PSYS_PART_BF_ONE_MINUS_SOURCE_COLOR"
     },
     "PSYS_PART_BF_SOURCE_ALPHA": {
         "prefix": "PSYS_PART_BF_SOURCE_ALPHA",
         "body": [
-             "PSYS_PART_BF_SOURCE_ALPHA$0"
+            "PSYS_PART_BF_SOURCE_ALPHA$0"
         ],
         "description": "PSYS_PART_BF_SOURCE_ALPHA"
     },
     "PSYS_PART_BF_SOURCE_COLOR": {
         "prefix": "PSYS_PART_BF_SOURCE_COLOR",
         "body": [
-             "PSYS_PART_BF_SOURCE_COLOR$0"
+            "PSYS_PART_BF_SOURCE_COLOR$0"
         ],
         "description": "PSYS_PART_BF_SOURCE_COLOR"
     },
     "PSYS_PART_BF_ZERO": {
         "prefix": "PSYS_PART_BF_ZERO",
         "body": [
-             "PSYS_PART_BF_ZERO$0"
+            "PSYS_PART_BF_ZERO$0"
         ],
         "description": "PSYS_PART_BF_ZERO"
     },
     "PSYS_PART_BLEND_FUNC_DEST": {
         "prefix": "PSYS_PART_BLEND_FUNC_DEST",
         "body": [
-             "PSYS_PART_BLEND_FUNC_DEST$0"
+            "PSYS_PART_BLEND_FUNC_DEST$0"
         ],
         "description": "PSYS_PART_BLEND_FUNC_DEST"
     },
     "PSYS_PART_BLEND_FUNC_SOURCE": {
         "prefix": "PSYS_PART_BLEND_FUNC_SOURCE",
         "body": [
-             "PSYS_PART_BLEND_FUNC_SOURCE$0"
+            "PSYS_PART_BLEND_FUNC_SOURCE$0"
         ],
         "description": "PSYS_PART_BLEND_FUNC_SOURCE"
     },
     "PSYS_PART_BOUNCE_MASK": {
         "prefix": "PSYS_PART_BOUNCE_MASK",
         "body": [
-             "PSYS_PART_BOUNCE_MASK$0"
+            "PSYS_PART_BOUNCE_MASK$0"
         ],
         "description": "PSYS_PART_BOUNCE_MASK"
     },
     "PSYS_PART_EMISSIVE_MASK": {
         "prefix": "PSYS_PART_EMISSIVE_MASK",
         "body": [
-             "PSYS_PART_EMISSIVE_MASK$0"
+            "PSYS_PART_EMISSIVE_MASK$0"
         ],
         "description": "PSYS_PART_EMISSIVE_MASK"
     },
     "PSYS_PART_END_ALPHA": {
         "prefix": "PSYS_PART_END_ALPHA",
         "body": [
-             "PSYS_PART_END_ALPHA$0"
+            "PSYS_PART_END_ALPHA$0"
         ],
         "description": "PSYS_PART_END_ALPHA"
     },
     "PSYS_PART_END_COLOR": {
         "prefix": "PSYS_PART_END_COLOR",
         "body": [
-             "PSYS_PART_END_COLOR$0"
+            "PSYS_PART_END_COLOR$0"
         ],
         "description": "PSYS_PART_END_COLOR"
     },
     "PSYS_PART_END_GLOW": {
         "prefix": "PSYS_PART_END_GLOW",
         "body": [
-             "PSYS_PART_END_GLOW$0"
+            "PSYS_PART_END_GLOW$0"
         ],
         "description": "PSYS_PART_END_GLOW"
     },
     "PSYS_PART_END_SCALE": {
         "prefix": "PSYS_PART_END_SCALE",
         "body": [
-             "PSYS_PART_END_SCALE$0"
+            "PSYS_PART_END_SCALE$0"
         ],
         "description": "PSYS_PART_END_SCALE"
     },
     "PSYS_PART_FLAGS": {
         "prefix": "PSYS_PART_FLAGS",
         "body": [
-             "PSYS_PART_FLAGS$0"
+            "PSYS_PART_FLAGS$0"
         ],
         "description": "PSYS_PART_FLAGS"
     },
     "PSYS_PART_FOLLOW_SRC_MASK": {
         "prefix": "PSYS_PART_FOLLOW_SRC_MASK",
         "body": [
-             "PSYS_PART_FOLLOW_SRC_MASK$0"
+            "PSYS_PART_FOLLOW_SRC_MASK$0"
         ],
         "description": "PSYS_PART_FOLLOW_SRC_MASK"
     },
     "PSYS_PART_FOLLOW_VELOCITY_MASK": {
         "prefix": "PSYS_PART_FOLLOW_VELOCITY_MASK",
         "body": [
-             "PSYS_PART_FOLLOW_VELOCITY_MASK$0"
+            "PSYS_PART_FOLLOW_VELOCITY_MASK$0"
         ],
         "description": "PSYS_PART_FOLLOW_VELOCITY_MASK"
     },
     "PSYS_PART_INTERP_COLOR_MASK": {
         "prefix": "PSYS_PART_INTERP_COLOR_MASK",
         "body": [
-             "PSYS_PART_INTERP_COLOR_MASK$0"
+            "PSYS_PART_INTERP_COLOR_MASK$0"
         ],
         "description": "PSYS_PART_INTERP_COLOR_MASK"
     },
     "PSYS_PART_INTERP_SCALE_MASK": {
         "prefix": "PSYS_PART_INTERP_SCALE_MASK",
         "body": [
-             "PSYS_PART_INTERP_SCALE_MASK$0"
+            "PSYS_PART_INTERP_SCALE_MASK$0"
         ],
         "description": "PSYS_PART_INTERP_SCALE_MASK"
     },
     "PSYS_PART_MAX_AGE": {
         "prefix": "PSYS_PART_MAX_AGE",
         "body": [
-             "PSYS_PART_MAX_AGE$0"
+            "PSYS_PART_MAX_AGE$0"
         ],
         "description": "PSYS_PART_MAX_AGE"
     },
     "PSYS_PART_RIBBON_MASK": {
         "prefix": "PSYS_PART_RIBBON_MASK",
         "body": [
-             "PSYS_PART_RIBBON_MASK$0"
+            "PSYS_PART_RIBBON_MASK$0"
         ],
         "description": "PSYS_PART_RIBBON_MASK"
     },
     "PSYS_PART_START_ALPHA": {
         "prefix": "PSYS_PART_START_ALPHA",
         "body": [
-             "PSYS_PART_START_ALPHA$0"
+            "PSYS_PART_START_ALPHA$0"
         ],
         "description": "PSYS_PART_START_ALPHA"
     },
     "PSYS_PART_START_COLOR": {
         "prefix": "PSYS_PART_START_COLOR",
         "body": [
-             "PSYS_PART_START_COLOR$0"
+            "PSYS_PART_START_COLOR$0"
         ],
         "description": "PSYS_PART_START_COLOR"
     },
     "PSYS_PART_START_GLOW": {
         "prefix": "PSYS_PART_START_GLOW",
         "body": [
-             "PSYS_PART_START_GLOW$0"
+            "PSYS_PART_START_GLOW$0"
         ],
         "description": "PSYS_PART_START_GLOW"
     },
     "PSYS_PART_START_SCALE": {
         "prefix": "PSYS_PART_START_SCALE",
         "body": [
-             "PSYS_PART_START_SCALE$0"
+            "PSYS_PART_START_SCALE$0"
         ],
         "description": "PSYS_PART_START_SCALE"
     },
     "PSYS_PART_TARGET_LINEAR_MASK": {
         "prefix": "PSYS_PART_TARGET_LINEAR_MASK",
         "body": [
-             "PSYS_PART_TARGET_LINEAR_MASK$0"
+            "PSYS_PART_TARGET_LINEAR_MASK$0"
         ],
         "description": "PSYS_PART_TARGET_LINEAR_MASK"
     },
     "PSYS_PART_TARGET_POS_MASK": {
         "prefix": "PSYS_PART_TARGET_POS_MASK",
         "body": [
-             "PSYS_PART_TARGET_POS_MASK$0"
+            "PSYS_PART_TARGET_POS_MASK$0"
         ],
         "description": "PSYS_PART_TARGET_POS_MASK"
     },
     "PSYS_PART_WIND_MASK": {
         "prefix": "PSYS_PART_WIND_MASK",
         "body": [
-             "PSYS_PART_WIND_MASK$0"
+            "PSYS_PART_WIND_MASK$0"
         ],
         "description": "PSYS_PART_WIND_MASK"
     },
     "PSYS_SRC_ACCEL": {
         "prefix": "PSYS_SRC_ACCEL",
         "body": [
-             "PSYS_SRC_ACCEL$0"
+            "PSYS_SRC_ACCEL$0"
         ],
         "description": "PSYS_SRC_ACCEL"
     },
     "PSYS_SRC_ANGLE_BEGIN": {
         "prefix": "PSYS_SRC_ANGLE_BEGIN",
         "body": [
-             "PSYS_SRC_ANGLE_BEGIN$0"
+            "PSYS_SRC_ANGLE_BEGIN$0"
         ],
         "description": "PSYS_SRC_ANGLE_BEGIN"
     },
     "PSYS_SRC_ANGLE_END": {
         "prefix": "PSYS_SRC_ANGLE_END",
         "body": [
-             "PSYS_SRC_ANGLE_END$0"
+            "PSYS_SRC_ANGLE_END$0"
         ],
         "description": "PSYS_SRC_ANGLE_END"
     },
     "PSYS_SRC_BURST_PART_COUNT": {
         "prefix": "PSYS_SRC_BURST_PART_COUNT",
         "body": [
-             "PSYS_SRC_BURST_PART_COUNT$0"
+            "PSYS_SRC_BURST_PART_COUNT$0"
         ],
         "description": "PSYS_SRC_BURST_PART_COUNT"
     },
     "PSYS_SRC_BURST_RADIUS": {
         "prefix": "PSYS_SRC_BURST_RADIUS",
         "body": [
-             "PSYS_SRC_BURST_RADIUS$0"
+            "PSYS_SRC_BURST_RADIUS$0"
         ],
         "description": "PSYS_SRC_BURST_RADIUS"
     },
     "PSYS_SRC_BURST_RATE": {
         "prefix": "PSYS_SRC_BURST_RATE",
         "body": [
-             "PSYS_SRC_BURST_RATE$0"
+            "PSYS_SRC_BURST_RATE$0"
         ],
         "description": "PSYS_SRC_BURST_RATE"
     },
     "PSYS_SRC_BURST_SPEED_MAX": {
         "prefix": "PSYS_SRC_BURST_SPEED_MAX",
         "body": [
-             "PSYS_SRC_BURST_SPEED_MAX$0"
+            "PSYS_SRC_BURST_SPEED_MAX$0"
         ],
         "description": "PSYS_SRC_BURST_SPEED_MAX"
     },
     "PSYS_SRC_BURST_SPEED_MIN": {
         "prefix": "PSYS_SRC_BURST_SPEED_MIN",
         "body": [
-             "PSYS_SRC_BURST_SPEED_MIN$0"
+            "PSYS_SRC_BURST_SPEED_MIN$0"
         ],
         "description": "PSYS_SRC_BURST_SPEED_MIN"
     },
     "PSYS_SRC_MAX_AGE": {
         "prefix": "PSYS_SRC_MAX_AGE",
         "body": [
-             "PSYS_SRC_MAX_AGE$0"
+            "PSYS_SRC_MAX_AGE$0"
         ],
         "description": "PSYS_SRC_MAX_AGE"
     },
     "PSYS_SRC_OMEGA": {
         "prefix": "PSYS_SRC_OMEGA",
         "body": [
-             "PSYS_SRC_OMEGA$0"
+            "PSYS_SRC_OMEGA$0"
         ],
         "description": "PSYS_SRC_OMEGA"
     },
     "PSYS_SRC_PATTERN": {
         "prefix": "PSYS_SRC_PATTERN",
         "body": [
-             "PSYS_SRC_PATTERN$0"
+            "PSYS_SRC_PATTERN$0"
         ],
         "description": "PSYS_SRC_PATTERN"
     },
     "PSYS_SRC_PATTERN_ANGLE": {
         "prefix": "PSYS_SRC_PATTERN_ANGLE",
         "body": [
-             "PSYS_SRC_PATTERN_ANGLE$0"
+            "PSYS_SRC_PATTERN_ANGLE$0"
         ],
         "description": "PSYS_SRC_PATTERN_ANGLE"
     },
     "PSYS_SRC_PATTERN_ANGLE_CONE": {
         "prefix": "PSYS_SRC_PATTERN_ANGLE_CONE",
         "body": [
-             "PSYS_SRC_PATTERN_ANGLE_CONE$0"
+            "PSYS_SRC_PATTERN_ANGLE_CONE$0"
         ],
         "description": "PSYS_SRC_PATTERN_ANGLE_CONE"
     },
     "PSYS_SRC_PATTERN_ANGLE_CONE_EMPTY": {
         "prefix": "PSYS_SRC_PATTERN_ANGLE_CONE_EMPTY",
         "body": [
-             "PSYS_SRC_PATTERN_ANGLE_CONE_EMPTY$0"
+            "PSYS_SRC_PATTERN_ANGLE_CONE_EMPTY$0"
         ],
         "description": "PSYS_SRC_PATTERN_ANGLE_CONE_EMPTY"
     },
     "PSYS_SRC_PATTERN_DROP": {
         "prefix": "PSYS_SRC_PATTERN_DROP",
         "body": [
-             "PSYS_SRC_PATTERN_DROP$0"
+            "PSYS_SRC_PATTERN_DROP$0"
         ],
         "description": "PSYS_SRC_PATTERN_DROP"
     },
     "PSYS_SRC_PATTERN_EXPLODE": {
         "prefix": "PSYS_SRC_PATTERN_EXPLODE",
         "body": [
-             "PSYS_SRC_PATTERN_EXPLODE$0"
+            "PSYS_SRC_PATTERN_EXPLODE$0"
         ],
         "description": "PSYS_SRC_PATTERN_EXPLODE"
     },
     "PSYS_SRC_TARGET_KEY": {
         "prefix": "PSYS_SRC_TARGET_KEY",
         "body": [
-             "PSYS_SRC_TARGET_KEY$0"
+            "PSYS_SRC_TARGET_KEY$0"
         ],
         "description": "PSYS_SRC_TARGET_KEY"
     },
     "PSYS_SRC_TEXTURE": {
         "prefix": "PSYS_SRC_TEXTURE",
         "body": [
-             "PSYS_SRC_TEXTURE$0"
+            "PSYS_SRC_TEXTURE$0"
         ],
         "description": "PSYS_SRC_TEXTURE"
     },
@@ -4605,12 +4605,194 @@
         ],
         "description": "There was an error connecting to the back-end service"
     },
+    "SIM_STAT_ACTIVE_SCRIPT_COUNT": {
+        "prefix": "SIM_STAT_ACTIVE_SCRIPT_COUNT",
+        "body": [
+            "SIM_STAT_ACTIVE_SCRIPT_COUNT$0"
+        ],
+        "description": "Value: 12\nNumber of active scripts in region."
+    },
+    "SIM_STAT_AGENT_COUNT": {
+        "prefix": "SIM_STAT_AGENT_COUNT",
+        "body": [
+            "SIM_STAT_AGENT_COUNT$0"
+        ],
+        "description": "Value: 10\nNumber of agents in region."
+    },
+    "SIM_STAT_AGENT_MS": {
+        "prefix": "SIM_STAT_AGENT_MS",
+        "body": [
+            "SIM_STAT_AGENT_MS$0"
+        ],
+        "description": "Value: 7\nTime spent in 'agent' segment of simulation frame."
+    },
+    "SIM_STAT_AGENT_UPDATES": {
+        "prefix": "SIM_STAT_AGENT_UPDATES",
+        "body": [
+            "SIM_STAT_AGENT_UPDATES$0"
+        ],
+        "description": "Value: 2\nAgent updates per second."
+    },
+    "SIM_STAT_AI_MS": {
+        "prefix": "SIM_STAT_AI_MS",
+        "body": [
+            "SIM_STAT_AI_MS$0"
+        ],
+        "description": "Value: 26\nTime spent on AI step. "
+    },
+    "SIM_STAT_ASSET_DOWNLOADS": {
+        "prefix": "SIM_STAT_ASSET_DOWNLOADS",
+        "body": [
+            "SIM_STAT_ASSET_DOWNLOADS$0"
+        ],
+        "description": "Value: 15\nPending asset download count."
+    },
+    "SIM_STAT_ASSET_UPLOADS": {
+        "prefix": "SIM_STAT_ASSET_UPLOADS",
+        "body": [
+            "SIM_STAT_ASSET_UPLOADS$0"
+        ],
+        "description": "Value: 16\nPending asset upload count."
+    },
+    "SIM_STAT_CHILD_AGENT_COUNT": {
+        "prefix": "SIM_STAT_CHILD_AGENT_COUNT",
+        "body": [
+            "SIM_STAT_CHILD_AGENT_COUNT$0"
+        ],
+        "description": "Value: 11\nNumber of child (neighboring) agents in region."
+    },
+    "SIM_STAT_FRAME_MS": {
+        "prefix": "SIM_STAT_FRAME_MS",
+        "body": [
+            "SIM_STAT_FRAME_MS$0"
+        ],
+        "description": "Value: 3\nTotal frame time."
+    },
+    "SIM_STAT_IMAGE_MS": {
+        "prefix": "SIM_STAT_IMAGE_MS",
+        "body": [
+            "SIM_STAT_IMAGE_MS$0"
+        ],
+        "description": "Value: 8\nTime spent in 'image' segment of simulation frame."
+    },
+    "SIM_STAT_IO_PUMP_MS": {
+        "prefix": "SIM_STAT_IO_PUMP_MS",
+        "body": [
+            "SIM_STAT_IO_PUMP_MS$0"
+        ],
+        "description": "Value: 24\nPumpIO time."
+    },
+    "SIM_STAT_NET_MS": {
+        "prefix": "SIM_STAT_NET_MS",
+        "body": [
+            "SIM_STAT_NET_MS$0"
+        ],
+        "description": "Value: 4\nTime spent in 'network' segment of simulation frame."
+    },
+    "SIM_STAT_OTHER_MS": {
+        "prefix": "SIM_STAT_OTHER_MS",
+        "body": [
+            "SIM_STAT_OTHER_MS$0"
+        ],
+        "description": "Value: 5\nMain simulation segment of frame, encapsulating task, script and misc. updates."
+    },
+    "SIM_STAT_PACKETS_IN": {
+        "prefix": "SIM_STAT_PACKETS_IN",
+        "body": [
+            "SIM_STAT_PACKETS_IN$0"
+        ],
+        "description": "Value: 13\nAverage packets in per second."
+    },
+    "SIM_STAT_PACKETS_OUT": {
+        "prefix": "SIM_STAT_PACKETS_OUT",
+        "body": [
+            "SIM_STAT_PACKETS_OUT$0"
+        ],
+        "description": "Value: 14\nAverage packets out per second."
+    },
     "SIM_STAT_PCT_CHARS_STEPPED": {
         "prefix": "SIM_STAT_PCT_CHARS_STEPPED",
         "body": [
             "SIM_STAT_PCT_CHARS_STEPPED$0"
         ],
-        "description": "The % of pathfinding characters updated each frame, averaged over the last minute. The value corresponds to the \"Characters Updated\" stat in the viewer's Statistics Bar.\n- Possible Return: [0.0, 100.0]"
+        "description": "Value: 0\nThe % of pathfinding characters updated each frame, averaged over the last minute. The value corresponds to the 'Characters Updated' stat in the viewer's Statistics Bar."
+    },
+    "SIM_STAT_PHYSICS_FPS": {
+        "prefix": "SIM_STAT_PHYSICS_FPS",
+        "body": [
+            "SIM_STAT_PHYSICS_FPS$0"
+        ],
+        "description": "Value: 1\nPhysics simulation FPS."
+    },
+    "SIM_STAT_PHYSICS_MS": {
+        "prefix": "SIM_STAT_PHYSICS_MS",
+        "body": [
+            "SIM_STAT_PHYSICS_MS$0"
+        ],
+        "description": "Value: 6\nTime spent in 'physics' segment of simulation frame."
+    },
+    "SIM_STAT_PHYSICS_OTHER_MS": {
+        "prefix": "SIM_STAT_PHYSICS_OTHER_MS",
+        "body": [
+            "SIM_STAT_PHYSICS_OTHER_MS$0"
+        ],
+        "description": "Value: 20\nAverage physics 'other' segment update time."
+    },
+    "SIM_STAT_PHYSICS_SHAPE_MS": {
+        "prefix": "SIM_STAT_PHYSICS_SHAPE_MS",
+        "body": [
+            "SIM_STAT_PHYSICS_SHAPE_MS$0"
+        ],
+        "description": "Value: 19\nAverage physics 'shape' segment update time."
+    },
+    "SIM_STAT_PHYSICS_STEP_MS": {
+        "prefix": "SIM_STAT_PHYSICS_STEP_MS",
+        "body": [
+            "SIM_STAT_PHYSICS_STEP_MS$0"
+        ],
+        "description": "Value: 18\nAverage physics step time."
+    },
+    "SIM_STAT_SCRIPT_EPS": {
+        "prefix": "SIM_STAT_SCRIPT_EPS",
+        "body": [
+            "SIM_STAT_SCRIPT_EPS$0"
+        ],
+        "description": "Value: 21\nScript events per second."
+    },
+    "SIM_STAT_SCRIPT_MS": {
+        "prefix": "SIM_STAT_SCRIPT_MS",
+        "body": [
+            "SIM_STAT_SCRIPT_MS$0"
+        ],
+        "description": "Value: 9\nTime spent in 'script' segment of simulation frame."
+    },
+    "SIM_STAT_SCRIPT_RUN_PCT": {
+        "prefix": "SIM_STAT_SCRIPT_RUN_PCT",
+        "body": [
+            "SIM_STAT_SCRIPT_RUN_PCT$0"
+        ],
+        "description": "Value: 25\nPercent of scripts run during frame."
+    },
+    "SIM_STAT_SLEEP_MS": {
+        "prefix": "SIM_STAT_SLEEP_MS",
+        "body": [
+            "SIM_STAT_SLEEP_MS$0"
+        ],
+        "description": "Value: 23\nTime spent sleeping."
+    },
+    "SIM_STAT_SPARE_MS": {
+        "prefix": "SIM_STAT_SPARE_MS",
+        "body": [
+            "SIM_STAT_SPARE_MS$0"
+        ],
+        "description": "Value: 22\nSpare time left after frame."
+    },
+    "SIM_STAT_UNACKED_BYTES": {
+        "prefix": "SIM_STAT_UNACKED_BYTES",
+        "body": [
+            "SIM_STAT_UNACKED_BYTES$0"
+        ],
+        "description": "Value: 17\nTotal unacknowledged bytes."
     },
     "SIT_INVALID_AGENT": {
         "prefix": "SIT_INVALID_AGENT",

@@ -1517,6 +1517,13 @@
         ],
         "description": "vector llGroundSlope( vector offset );\n\n 221 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns a vector that is the ground slope below the object position + offset\n• vector offset – offset relative to the prim's position and expressed in local coordinates\nThe requested position needs to be in the same region.\nOnly the x and y coordinates in offset are important, the z component is ignored."
     },
+    "llHMAC": {
+        "prefix": "llHMAC",
+        "body": [
+            "llHMAC(${1:private_key}, ${2:msg}, ${3:algorithm})$0"
+        ],
+        "description": "string llHMAC( string private_key, string msg, string algorithm );\nReturns a string that is the Base64-encoded HMAC hash of msg when using hash algorithm algorithm and secret key private_key. This function supports md5, sha1, sha224, sha256, sha384, sha512 for algorithm."
+    },
     "llHTTPRequest": {
         "prefix": "llHTTPRequest",
         "body": [
@@ -2287,6 +2294,13 @@
         ],
         "description": "llReplaceEnvironment vector position, string environment, integer track_no, integer day_length, integer day_offset ); \n\n The llReplaceEnvironment function replaces the environment in a parcel or a region. Either for a single elevation track or the entire environment. The owner of the script must have permission to edit the environment on the destination parcel, or be an estate manage in the case of an entire region. In most cases errors are reported as a return value from the function (see table below). However, issues with the environment assets may be reported in the debug chat. Returns an Integer \n vector position – The position in the region of the parcel that will receive the new environment. To change the entire region use <-1, -1, -1>. The z component of the vector is ignored. \nstring environment – The name of an environmental setting in the object's inventory or the asset ID for an environment. NULL_KEY or empty string to remove the environment.\ninteger track_no – The elevation zone to change. 0 for water, 1 for ground level, 2 for sky 1000m, 3 for sky 2000m, 4 for sky 3000m. -1 to change all tracks.\ninteger day_length – The length in seconds for the day cycle. -1 to leave unchanged.\ninteger day_offset – The offset in seconds from UTC. -1 to leave unchanged.\nReturn Values 1 - The parcel or region will attempt to change the applied environment. \n -3 - ENV_NO_ENVIRONMENT The environment inventory object could not be found.  \n -8 - ENV_THROTTLE The scripts have exceeded the throttle. Wait and retry the request. \n -9 - ENV_NO_PERMISSIONS  The script does not have permission to change the environment at the selected location. OR there was an attempt to remove altitude track 0 or 1 (in this case a message will also be chatted to the debug channel)."
     },
+    "llReplaceSubString": {
+        "prefix": "llReplaceSubString",
+        "body": [
+            "llReplaceSubString(${1:src}, ${2:pattern}, ${3:replacement_pattern}, ${4:count})$0"
+        ],
+        "description": "string llReplaceSubString( string src, string pattern, string replacement_pattern, integer count );\nReturns a string that is the result of replacing the first count matching instances pattern in src with replacement_pattern."
+    },
     "llRequestAgentData": {
         "prefix": "llRequestAgentData",
         "body": [
@@ -3015,6 +3029,13 @@
         ],
         "description": "llShout( integer channel, string msg );\n\n 24 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nShouts the text supplied in string msg on channel supplied in integer channel.\n• integer channel – output chat channel, any integer value\n• string msg – message to be transmitted\n"
     },
+    "llSignRSA": {
+        "prefix": "llSignRSA",
+        "body": [
+            "llSignRSA(${1:private_key}, ${2:msg}, ${3:algorithm})$0"
+        ],
+        "description": "string llSignRSA( string private_key, string msg, string algorithm );\nReturns a string that is the Base64-encoded RSA signature of msg when using hash algorithm algorithm and secret key private_key. Can be paired with llVerifyRSA to pass verifiable messages. This function supports md5, sha1, sha224, sha256, sha384, sha512 for algorithm."
+    },
     "llSin": {
         "prefix": "llSin",
         "body": [
@@ -3315,6 +3336,13 @@
             "llVecNorm(${1:vec})$0"
         ],
         "description": "vector llVecNorm( vector vec );\n\n 13 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns the vector that is vec normalized (a unit vector sharing the same direction as vec).\n• vector vec – Any valid vector\nIf vec is a ZERO_VECTOR, than the value returned is a ZERO_VECTOR.\n"
+    },
+    "llVerifyRSA": {
+        "prefix": "llVerifyRSA",
+        "body": [
+            "llVerifyRSA(${1:public_key}, ${2:msg}, ${3:signature}, ${4:algorithm})$0"
+        ],
+        "description": "integer llVerifyRSA( string public_key, string msg, string signature, string algorithm );\nReturns an integer indicating whether the RSA signature is valid for msg when using hash algorithm algorithm and public RSA key public_key. Returns TRUE if the signature is verified, and FALSE otherwise. Can be paired with llSignRSA to validate the authenticity of messages from other LSL scripts. This function supports md5, sha1, sha224, sha256, sha384, sha512 for algorithm."
     },
     "llVolumeDetect": {
         "prefix": "llVolumeDetect",
