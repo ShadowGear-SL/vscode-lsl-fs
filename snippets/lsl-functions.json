@@ -225,16 +225,16 @@
     "llCloseRemoteDataChannel": {
         "prefix": "llCloseRemoteDataChannel",
         "body": [
-            "llCloseRemoteDataChannel(DEPRECATED, Do Not Use);$0"
+            "llCloseRemoteDataChannel(${1:channel});$0"
         ],
-        "description": "llCloseRemoteDataChannel( key channel );\n\n 257 Function ID\n 1.0 Forced Delay\n 10.0 Energy\n\nCloses XML-RPC channel.\n• key channel\n"
+        "description": "[DEPRECATED] llCloseRemoteDataChannel( key channel );\n\n 257 Function ID\n 1.0 Forced Delay\n 10.0 Energy\n\nCloses XML-RPC channel.\n• key channel\n"
     },
     "llCloud": {
         "prefix": "llCloud",
         "body": [
-            "llCloud(DEPRECATED, Do Not Use)$0"
+            "llCloud(${1:offset})$0"
         ],
-        "description": "float llCloud( vector offset );\n\n 43 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns a float that is the cloud density at the prim position + offset\n• vector offset – offset relative to the prim's position and expressed in local coordinates\nOnly the x and y coordinates in offset are important, the z component is ignored.\nReturned values are in the range [0.0, 2.0]. Values above 1.0 indicate rain.\n"
+        "description": "[DEPRECATED] float llCloud( vector offset );\n\n 43 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns a float that is the cloud density at the prim position + offset\n• vector offset – offset relative to the prim's position and expressed in local coordinates\nOnly the x and y coordinates in offset are important, the z component is ignored.\nReturned values are in the range [0.0, 2.0]. Values above 1.0 indicate rain.\n"
     },
     "llCollisionFilter": {
         "prefix": "llCollisionFilter",
@@ -1933,30 +1933,30 @@
     "llMakeExplosion": {
         "prefix": "llMakeExplosion",
         "body": [
-            "llMakeExplosion(DEPRECATED, No use);$0"
+            "llMakeExplosion(${1:particles}, ${2:scale}, ${3:vel}, ${4:lifetime}, ${5:arc}, ${6:texture}, ${7:offset});$0"
         ],
-        "description": "llMakeExplosion( integer particles, float scale, float vel, float lifetime, float arc, string texture, vector offset );\n\n 100 Function ID\n 0.1 Forced Delay\n 10.0 Energy\n\nMake a round explosion of particles\n• integer particles\n• float scale\n• float vel\n• float lifetime\n• float arc\n• string texture – a texture in the inventory of the prim this script is in or a UUID of a texture\n• vector offset – offset relative to the prim's position and expressed in local coordinates and is completely ignored.\n"
+        "description": "[DEPRECATED] llMakeExplosion( integer particles, float scale, float vel, float lifetime, float arc, string texture, vector offset );\n\n 100 Function ID\n 0.1 Forced Delay\n 10.0 Energy\n\nMake a round explosion of particles\n• integer particles\n• float scale\n• float vel\n• float lifetime\n• float arc\n• string texture – a texture in the inventory of the prim this script is in or a UUID of a texture\n• vector offset – offset relative to the prim's position and expressed in local coordinates and is completely ignored.\n"
     },
     "llMakeFire": {
         "prefix": "llMakeFire",
         "body": [
-            "llMakeFire(DEPRECATED, Avoid Use);$0"
+            "llMakeFire(${1:particles}, ${2:scale}, ${3:vel}, ${4:lifetime}, ${5:arc}, ${6:texture}, ${7:offset});$0"
         ],
-        "description": "llMakeFire( integer particles, float scale, float vel, float lifetime, float arc, string texture, vector offset );\n\n 103 Function ID\n 0.1 Forced Delay\n 10.0 Energy\n\nMake fire like particles\n• integer particles\n• float scale\n• float vel\n• float lifetime\n• float arc\n• string texture – a texture in the inventory of the prim this script is in or a UUID of a texture\n• vector offset – offset relative to the prim's position and expressed in local coordinates and is completely ignored.\n"
+        "description": "[DEPRECATED] llMakeFire( integer particles, float scale, float vel, float lifetime, float arc, string texture, vector offset );\n\n 103 Function ID\n 0.1 Forced Delay\n 10.0 Energy\n\nMake fire like particles\n• integer particles\n• float scale\n• float vel\n• float lifetime\n• float arc\n• string texture – a texture in the inventory of the prim this script is in or a UUID of a texture\n• vector offset – offset relative to the prim's position and expressed in local coordinates and is completely ignored.\n"
     },
     "llMakeFountain": {
         "prefix": "llMakeFountain",
         "body": [
-            "llMakeFountain(DEPRECATED, Please No);$0"
+            "llMakeFountain(${1:particles}, ${2:scale}, ${3:vel}, ${4:lifetime}, ${5:arc}, ${6:bounce}, ${7:texture}, ${8:offset}, ${9:bounce_offset});$0"
         ],
-        "description": "llMakeFountain( integer particles, float scale, float vel, float lifetime, float arc, integer bounce, string texture, vector offset, float bounce_offset );\n\n 101 Function ID\n 0.1 Forced Delay\n 10.0 Energy\n\nMake a fountain of particles\n• integer particles\n• float scale\n• float vel\n• float lifetime\n• float arc\n• integer bounce\n• string texture – a texture in the inventory of the prim this script is in or a UUID of a texture\n• vector offset – offset relative to the prim's position and expressed in local coordinates and is completely ignored.\n• float bounce_offset\n"
+        "description": "[DEPRECATED] llMakeFountain( integer particles, float scale, float vel, float lifetime, float arc, integer bounce, string texture, vector offset, float bounce_offset );\n\n 101 Function ID\n 0.1 Forced Delay\n 10.0 Energy\n\nMake a fountain of particles\n• integer particles\n• float scale\n• float vel\n• float lifetime\n• float arc\n• integer bounce\n• string texture – a texture in the inventory of the prim this script is in or a UUID of a texture\n• vector offset – offset relative to the prim's position and expressed in local coordinates and is completely ignored.\n• float bounce_offset\n"
     },
     "llMakeSmoke": {
         "prefix": "llMakeSmoke",
         "body": [
-            "llMakeSmoke(DEPRECATED, Avoid Use);$0"
+            "llMakeSmoke(${1:particles}, ${2:scale}, ${3:vel}, ${4:lifetime}, ${5:arc}, ${6:texture}, ${7:offset});$0"
         ],
-        "description": "llMakeSmoke( integer particles, float scale, float vel, float lifetime, float arc, string texture, vector offset );\n\n 102 Function ID\n 0.1 Forced Delay\n 10.0 Energy\n\nMake smoke like particles\n• integer particles\n• float scale\n• float vel\n• float lifetime\n• float arc\n• string texture – a texture in the inventory of the prim this script is in or a UUID of a texture\n• vector offset – offset relative to the prim's position and expressed in local coordinates and is completely ignored.\n"
+        "description": "[DEPRECATED] llMakeSmoke( integer particles, float scale, float vel, float lifetime, float arc, string texture, vector offset );\n\n 102 Function ID\n 0.1 Forced Delay\n 10.0 Energy\n\nMake smoke like particles\n• integer particles\n• float scale\n• float vel\n• float lifetime\n• float arc\n• string texture – a texture in the inventory of the prim this script is in or a UUID of a texture\n• vector offset – offset relative to the prim's position and expressed in local coordinates and is completely ignored.\n"
     },
     "llManageEstateAccess": {
         "prefix": "llManageEstateAccess",
@@ -2038,9 +2038,9 @@
     "llOpenRemoteDataChannel": {
         "prefix": "llOpenRemoteDataChannel",
         "body": [
-            "llOpenRemoteDataChannel(DEPRECATED, Do Not Use);$0"
+            "llOpenRemoteDataChannel();$0"
         ],
-        "description": "llOpenRemoteDataChannel( );\n\n 254 Function ID\n 1.0 Forced Delay\n 10.0 Energy\n\nCreates a channel to listen for XML-RPC calls. Will trigger a remote_data event with channel id once it is available."
+        "description": "[DEPRECATED] llOpenRemoteDataChannel( );\n\n 254 Function ID\n 1.0 Forced Delay\n 10.0 Energy\n\nCreates a channel to listen for XML-RPC calls. Will trigger a remote_data event with channel id once it is available."
     },
     "llOrd": {
         "prefix": "llOrd",
@@ -2136,9 +2136,9 @@
     "llPointAt": {
         "prefix": "llPointAt",
         "body": [
-            "llPointAt(DEPRECATED, Do Not Use);$0"
+            "llPointAt(${1:pos});$0"
         ],
-        "description": "llPointAt( vector pos );\n\n 131 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nMake agent that owns object point at pos\n• vector pos\n"
+        "description": "[DEPRECATED] llPointAt( vector pos );\n\n 131 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nMake agent that owns object point at pos\n• vector pos\n"
     },
     "llPow": {
         "prefix": "llPow",
@@ -2178,9 +2178,9 @@
     "llRefreshPrimURL": {
         "prefix": "llRefreshPrimURL",
         "body": [
-            "llRefreshPrimURL(DEPRECATED, Do Not Use);$0"
+            "llRefreshPrimURL();$0"
         ],
-        "description": "llRefreshPrimURL( );\n\n 306 Function ID\n 20.0 Forced Delay\n 10.0 Energy\n\nReloads the web page shown on the sides of the object.This functions currently does nothing.\n"
+        "description": "[DEPRECATED] llRefreshPrimURL( );\n\n 306 Function ID\n 20.0 Forced Delay\n 10.0 Energy\n\nReloads the web page shown on the sides of the object.This functions currently does nothing.\n"
     },
     "llRegionSay": {
         "prefix": "llRegionSay",
@@ -2199,9 +2199,9 @@
     "llReleaseCamera": {
         "prefix": "llReleaseCamera",
         "body": [
-            "llReleaseCamera(DEPRECATED, Never Implemented);$0"
+            "llReleaseCamera(${1:avatar});$0"
         ],
-        "description": "llReleaseCamera( key avatar );\n\n 116 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nThis function is recognized by the compiler, but was never implemented in Second Life.\n• key avatar – avatar UUID that is in the same region\n"
+        "description": "[DEPRECATED] llReleaseCamera( key avatar );\n\n 116 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nThis function is recognized by the compiler, but was never implemented in Second Life.\n• key avatar – avatar UUID that is in the same region\n"
     },
     "llReleaseControls": {
         "prefix": "llReleaseControls",
@@ -2220,23 +2220,23 @@
     "llRemoteDataReply": {
         "prefix": "llRemoteDataReply",
         "body": [
-            "llRemoteDataReply(DEPRECATED, Do Not Use);$0"
+            "llRemoteDataReply(${1:channel}, ${2:message_id}, ${3:sdata}, ${4:idata});$0"
         ],
-        "description": "llRemoteDataReply( key channel, key message_id, string sdata, integer idata );\n\n 256 Function ID\n 3.0 Forced Delay\n 10.0 Energy\n\nSend an XML-RPC reply on channel to message_id with payload of string sdata and integer idata\n• key channel\n• key message_id\n• string sdata\n• integer idata\n"
+        "description": "[DEPRECATED] llRemoteDataReply( key channel, key message_id, string sdata, integer idata );\n\n 256 Function ID\n 3.0 Forced Delay\n 10.0 Energy\n\nSend an XML-RPC reply on channel to message_id with payload of string sdata and integer idata\n• key channel\n• key message_id\n• string sdata\n• integer idata\n"
     },
     "llRemoteDataSetRegion": {
         "prefix": "llRemoteDataSetRegion",
         "body": [
-            "llRemoteDataSetRegion(DEPRECATED, Do Not Use);$0"
+            "llRemoteDataSetRegion();$0"
         ],
-        "description": "llRemoteDataSetRegion( );\n\n 263 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nUsed with XML-RPC. If an object using remote data channels changes regions, you must call this function to reregister the remote data channels.This call is not needed if the prim does not change regions.\n"
+        "description": "[DEPRECATED] llRemoteDataSetRegion( );\n\n 263 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nUsed with XML-RPC. If an object using remote data channels changes regions, you must call this function to reregister the remote data channels.This call is not needed if the prim does not change regions.\n"
     },
     "llRemoteLoadScript": {
         "prefix": "llRemoteLoadScript",
         "body": [
-            "llRemoteLoadScript(DEPRECATED, Avoid Using This);$0"
+            "llRemoteLoadScript(${1:target}, ${2:name}, ${3:running}, ${4:start_param});$0"
         ],
-        "description": "llRemoteLoadScript( key target, string name, integer running, integer start_param );\n\n 251 Function ID\n 3.0 Forced Delay\n 10.0 Energy\n\nDeprecated\n• key target – prim UUID that is in the same region\n• string name – a script in the inventory of the prim this script is in\n• integer running\n• integer start_param\n"
+        "description": "[DEPRECATED] llRemoteLoadScript( key target, string name, integer running, integer start_param );\n\n 251 Function ID\n 3.0 Forced Delay\n 10.0 Energy\n\nDeprecated\n• key target – prim UUID that is in the same region\n• string name – a script in the inventory of the prim this script is in\n• integer running\n• integer start_param\n"
     },
     "llRemoteLoadScriptPin": {
         "prefix": "llRemoteLoadScriptPin",
@@ -2570,9 +2570,9 @@
     "llSendRemoteData": {
         "prefix": "llSendRemoteData",
         "body": [
-            "llSendRemoteData(DEPRECATED, Do Not Use)$0"
+            "llSendRemoteData(${1:channel}, ${2:dest}, ${3:idata}, ${4:sdata})$0"
         ],
-        "description": "key llSendRemoteData( key channel, string dest, integer idata, string sdata );\n\n 255 Function ID\n 3.0 Forced Delay\n 10.0 Energy\n\nSend an XML-RPC request to dest through channel with payload of channel (in a string), integer idata and string sdata.Returns a key that is the message_id for the resulting remote_data events.\n• key channel\n• string dest\n• integer idata\n• string sdata\n"
+        "description": "[DEPRECATED] key llSendRemoteData( key channel, string dest, integer idata, string sdata );\n\n 255 Function ID\n 3.0 Forced Delay\n 10.0 Energy\n\nSend an XML-RPC request to dest through channel with payload of channel (in a string), integer idata and string sdata.Returns a key that is the message_id for the resulting remote_data events.\n• key channel\n• string dest\n• integer idata\n• string sdata\n"
     },
     "llSensor": {
         "prefix": "llSensor",
@@ -2850,9 +2850,9 @@
     "llSetPrimURL": {
         "prefix": "llSetPrimURL",
         "body": [
-            "llSetPrimURL(DEPRECATED, Do Not Use);$0"
+            "llSetPrimURL(${1:url});$0"
         ],
-        "description": "llSetPrimURL( string url );\n\n 305 Function ID\n 20.0 Forced Delay\n 10.0 Energy\n\nUpdates the URL for the web page shown on the sides of the object.\n• string url\n"
+        "description": "[DEPRECATED] llSetPrimURL( string url );\n\n 305 Function ID\n 20.0 Forced Delay\n 10.0 Energy\n\nUpdates the URL for the web page shown on the sides of the object.\n• string url\n"
     },
     "llSetPrimitiveParams": {
         "prefix": "llSetPrimitiveParams",
@@ -3046,16 +3046,16 @@
     "llSound": {
         "prefix": "llSound",
         "body": [
-            "llSound(DEPRECATED, Avoid Use);$0"
+            "llSound(${1:sound}, ${2:volume}, ${3:queue}, ${4:loop});$0"
         ],
-        "description": "llSound( string sound, float volume, integer queue, integer loop );\n\n 85 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nPlays sound at volume and whether it should loop or not.\n• string sound – a sound in the inventory of the prim this script is in or a UUID of a sound\n• float volume – between 0.0 (silent) and 1.0 (loud) (0.0 <= volume <= 1.0)\n• integer queue – boolean, whether or not to queue the song (TRUE) or interrupt the playing song (FALSE).\n• integer loop – boolean, whether or not to loop the song.\n"
+        "description": "[DEPRECATED] llSound( string sound, float volume, integer queue, integer loop );\n\n 85 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nPlays sound at volume and whether it should loop or not.\n• string sound – a sound in the inventory of the prim this script is in or a UUID of a sound\n• float volume – between 0.0 (silent) and 1.0 (loud) (0.0 <= volume <= 1.0)\n• integer queue – boolean, whether or not to queue the song (TRUE) or interrupt the playing song (FALSE).\n• integer loop – boolean, whether or not to loop the song.\n"
     },
     "llSoundPreload": {
         "prefix": "llSoundPreload",
         "body": [
-            "llSoundPreload(DEPRECATED, Avoid Use);$0"
+            "llSoundPreload(${1:sound});$0"
         ],
-        "description": "llSoundPreload( string sound );\n\n 126 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nPreloads sound on viewers within range.\n• string sound – a sound in the inventory of the prim this script is in or a UUID of a sound\n"
+        "description": "[DEPRECATED] llSoundPreload( string sound );\n\n 126 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nPreloads sound on viewers within range.\n• string sound – a sound in the inventory of the prim this script is in or a UUID of a sound\n"
     },
     "llSqrt": {
         "prefix": "llSqrt",
@@ -3116,9 +3116,9 @@
     "llStopPointAt": {
         "prefix": "llStopPointAt",
         "body": [
-            "llStopPointAt(DEPRECATED, Do Not Use);$0"
+            "llStopPointAt();$0"
         ],
-        "description": "llStopPointAt( );\n\n 132 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nStop agent that owns object pointing"
+        "description": "[DEPRECATED] llStopPointAt( );\n\n 132 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nStop agent that owns object pointing"
     },
     "llStopSound": {
         "prefix": "llStopSound",
@@ -3158,9 +3158,9 @@
     "llTakeCamera": {
         "prefix": "llTakeCamera",
         "body": [
-            "llTakeCamera(DEPRECATED, Do Not Use);$0"
+            "llTakeCamera(${1:avatar});$0"
         ],
-        "description": "llTakeCamera( key avatar );\n\n 115 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nThis function is recognized by the compiler, but was never implemented in Second Life.\n• key avatar – avatar UUID that is in the same region\n"
+        "description": "[DEPRECATED] llTakeCamera( key avatar );\n\n 115 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nThis function is recognized by the compiler, but was never implemented in Second Life.\n• key avatar – avatar UUID that is in the same region\n"
     },
     "llTakeControls": {
         "prefix": "llTakeControls",
@@ -3361,16 +3361,16 @@
     "llXorBase64Strings": {
         "prefix": "llXorBase64Strings",
         "body": [
-            "llXorBase64Strings(DEPRECATED, Do Not Use)$0"
+            "llXorBase64Strings(${1:str1}, ${2:str2})$0"
         ],
-        "description": "string llXorBase64Strings( string str1, string str2 );\n\n 262 Function ID\n 0.3 Forced Delay\n 10.0 Energy\n\nReturns a string that is a Base64 string of s1 xor'ed with s2.\n• string str1 – Base64 string\n• string str2 – Base64 string\ns2 repeats if it is shorter than s1. Retained for backwards compatibility.\n"
+        "description": "[DEPRECATED] string llXorBase64Strings( string str1, string str2 );\n\n 262 Function ID\n 0.3 Forced Delay\n 10.0 Energy\n\nReturns a string that is a Base64 string of s1 xor'ed with s2.\n• string str1 – Base64 string\n• string str2 – Base64 string\ns2 repeats if it is shorter than s1. Retained for backwards compatibility.\n"
     },
     "llXorBase64StringsCorrect": {
         "prefix": "llXorBase64StringsCorrect",
         "body": [
-            "llXorBase64StringsCorrect(DEPRECATED, Avoid Use)$0"
+            "llXorBase64StringsCorrect(${1:str1}, ${2:str2})$0"
         ],
-        "description": "string llXorBase64StringsCorrect( string str1, string str2 );\n\n 319 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nCorrectly performs an exclusive or on two Base 64 strings.Returns a string that is a Base64 XOR of str1 and str2.\n• string str1 – Base64 string\n• string str2 – Base64 string\nstr2 repeats if it is shorter than str1. If the inputs are not Base64 strings the result will be erratic.\n"
+        "description": "[DEPRECATED] string llXorBase64StringsCorrect( string str1, string str2 );\n\n 319 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nCorrectly performs an exclusive or on two Base 64 strings.Returns a string that is a Base64 XOR of str1 and str2.\n• string str1 – Base64 string\n• string str2 – Base64 string\nstr2 repeats if it is shorter than str1. If the inputs are not Base64 strings the result will be erratic.\n"
     },
     "llsRGB2Linear": {
         "prefix": "llsRGB2Linear",
