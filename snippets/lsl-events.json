@@ -297,7 +297,7 @@
             "\t$0",
             "}"
         ],
-        "description": "Deprecated. Don't use this! Triggered by various XML-RPC calls.\n• integer event_type\n• key channel\n• key message_id\n• string sender\n• integer idata\n• string sdata"
+        "description": "[DEPRECATED] Triggered by various XML-RPC calls.\n• integer event_type\n• key channel\n• key message_id\n• string sender\n• integer idata\n• string sdata"
     },
     "run_time_permissions Event": {
         "prefix": "run_time_permissions",

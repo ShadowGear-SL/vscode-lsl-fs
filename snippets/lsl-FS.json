@@ -15,6 +15,8 @@
         "description": "pragma once implement"
     },
 
+
+
     "Float Casting Preprocessor": {
         "prefix": "float()",
         "body": [
@@ -174,7 +176,7 @@
     },
 
 
-    
+
     "__FILE__ Preprocessor": {
         "prefix": "__FILE__",
         "body": [
@@ -231,6 +233,8 @@
         ],
         "description": "a string-encapsulated version of the assetid of the current script; may return “NOT IN WORLD” or a nonstring-encapsulated null key in rare circumstances"
     },
+
+
 
     "Switch Statement": {
         "prefix": "switch",
