@@ -17,10 +17,13 @@ Initial release.
 ## Future plans
 
 - Add syntax highlighting for Firestorm Preprocessor directives.
-- Add incoming LSL features currently being tested in RC Bluesteel.
-- Create a proper Language Server Protocol for LSL to properly implement intellisense.
+- Add incoming LSL features currently being tested in RC.
 
 ## Patch Notes
+
+### 0.1.6
+* Update LSL version to 2023-03-24.579022.
+* Deprecation warning in descriptions only since we have 'avoid' highlighting.
 
 ### 0.1.5
 * Fix snippet tab completion.
