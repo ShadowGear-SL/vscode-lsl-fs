@@ -5,9 +5,7 @@
             "#ifndef ${1:FILE_INDENTIFIER}",
             "#define ${1:FILE_INDENTIFIER}",
             "",
-            "",
             "$0",
-            "",
             "",
             "#endif // ${1:FILE_INDENTIFIER}",
             ""
@@ -242,14 +240,10 @@
             "switch (${1:value})",
             "{",
             "\tcase (${2:case}):",
-            "\t{",
             "\t\t$0",
             "\t\tbreak;",
-            "\t}",
             "\tdefault:",
-            "\t{",
             "\t\tbreak;",
-            "\t}",
             "}"
         ],
         "description": "Switch Statement"
