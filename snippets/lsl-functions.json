@@ -1790,6 +1790,13 @@
         ],
         "description": "list llList2List( list src, integer start, integer end );\n\n 192 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns a list that is a slice of src from start to end.\n• list src\n• integer start – start index\n• integer end – end index\nstart & end support negative indexes."
     },
+    "llList2ListSlice": {
+        "prefix": "llList2ListSlice",
+        "body": [
+            "llList2ListSlice(${1:src}, ${2:start}, ${3:end}, ${4:stride}, ${5:slice_index})$0"
+        ],
+        "description": "list llList2ListSlice( list src, integer start, integer end, integer stride, integer slice_index );\n\nReturns a list of the slice_index'th element of every stride in strided list whose index is a multiple of stride in the range start to end."
+    },
     "llList2ListStrided": {
         "prefix": "llList2ListStrided",
         "body": [
@@ -1825,6 +1832,13 @@
         ],
         "description": "integer llListFindList( list src, list test );\n\n 201 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns the integer index of the first instance of test in src.\n• list src – what to search in (haystack)\n• list test – what to search for (needle)\nIf test is not found in src, -1 is returned.\nThe index of the first entry in the list is 0\nIf test is found at the last index in src the positive index is returned (5th entry of 5 returns 4).\n"
     },
+    "llListFindStrided": {
+        "prefix": "llListFindStrided",
+        "body": [
+            "llListFindStrided(${1:src}, ${2:test}, ${3:start}, ${4:end}, ${5:stride})$0"
+        ],
+        "description": "integer llListFindStrided( list src, list test, integer start, integer end, integer stride );\n\nReturns the integer index of the first instance of test in src matching conditions."
+    },
     "llListInsertList": {
         "prefix": "llListInsertList",
         "body": [
@@ -1852,6 +1866,13 @@
             "llListSort(${1:src}, ${2:stride}, ${3|TRUE,FALSE|})$0"
         ],
         "description": "list llListSort( list src, integer stride, integer ascending );\n"
+    },
+    "llListSortStrided": {
+        "prefix": "llListSortStrided",
+        "body": [
+            "llListSortListStrided(${1:src}, ${2:stride}, ${3:stride_index}, ${4:ascending})$0"
+        ],
+        "description": "llListSortStrided( list src, integer stride, integer stride_index, integer ascending );\n\nllListSortStrided is llListSort with the added parameter of stride_index, adding the flexibility to sort by any item in the stride. These routines use the same underlying code and have the same computational complexity."
     },
     "llListStatistics": {
         "prefix": "llListStatistics",

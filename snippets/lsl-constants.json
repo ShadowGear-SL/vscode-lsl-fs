@@ -27,6 +27,13 @@
         ],
         "description": "AGENT_ATTACHMENTS"
     },
+    "AGENT_AUTOMATED": {
+        "prefix": "AGENT_AUTOMATED",
+        "body": [
+            "AGENT_AUTOMATED$0"
+        ],
+        "description": "AGENT_AUTOMATED"
+    },
     "AGENT_AUTOPILOT": {
         "prefix": "AGENT_AUTOPILOT",
         "body": [
