@@ -1678,6 +1678,13 @@
         ],
         "description": "The llLinksetDataAvailable returns the number of bytes available in the linkset's datastore.\nReturns an integer number of bytes available in the linkset store."
     },
+    "llLinksetDataCountFound": {
+        "prefix": "llLinksetDataCountFound",
+        "body": [
+            "llLinksetDataCountFound(${1:pattern})$0"
+        ],
+        "description": "The llLinksetDataCountFound function returns the number of keys in the linkset datastore that match the pattern supplied in the pattern."
+    },
     "llLinksetDataCountKeys": {
         "prefix": "llLinksetDataCountKeys",
         "body": [
@@ -1691,6 +1698,13 @@
             "llLinksetDataDelete(${1:name})$0"
         ],
         "description": "The llLinksetDataDelete and llLinksetDataDeleteProtected functions erases a name:value pair from the linkset's datastore. \n When this function successfully removes a name:value pair a linkset_data event is triggered in all scripts running in the linkset with an action of LINKSETDATA_DELETE and the name parameter set to the name that was removed.\n The value parameter in the event is set to an empty string."
+    },
+    "llLinksetDataDeleteFound": {
+        "prefix": "llLinksetDataDeleteFound",
+        "body": [
+            "llLinksetDataDeleteFound(${1:pattern}, ${2:pass})$0"
+        ],
+        "description": "The llLinksetDataDeleteFound function finds and attempts to delete all keys in the data store that match pattern. This function will delete protected key-value pairs only if the matching pass phrase is passed in the pass parameter. The function returns a list, the first entry in the list is the number of keys deleted, the second entry in the list is the number of keys that could not be deleted due to a non-matching pass phrase. If this function successfully deletes any keys from the datastore it will trigger a linkset_data event with the type of LINKSET_DATA_MULTIDELETE, the key name will consist of a comma separated list of the key names removed from the datastore."
     },
     "llLinksetDataDeleteProtected": {
         "prefix": "llLinksetDataDeleteProtected",

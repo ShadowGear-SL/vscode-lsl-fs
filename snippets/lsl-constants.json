@@ -1903,6 +1903,13 @@
         ],
         "description": "The name:value pair has been protected from overwrite in the linkset's datastore."
     },
+    "LINKSETDATA_MULTIDELETE": {
+        "prefix": "LINKSETDATA_MULTIDELETE",
+        "body": [
+            "LINKSETDATA_MULTIDELETE$0"
+        ],
+        "description": "LINKSETDATA_MULTIDELETE"
+    },
     "LINKSETDATA_NOTFOUND": {
         "prefix": "LINKSETDATA_NOTFOUND",
         "body": [
@@ -3681,6 +3688,13 @@
         ],
         "description": "PRIM_SCRIPTED_SIT_ONLY"
     },
+    "PRIM_SCULPT_FLAG_ANIMESH": {
+        "prefix": "PRIM_SCULPT_FLAG_ANIMESH",
+        "body": [
+            "PRIM_SCULPT_FLAG_ANIMESH$0"
+        ],
+        "description": "PRIM_SCULPT_FLAG_ANIMESH"
+    },
     "PRIM_SCULPT_FLAG_INVERT": {
         "prefix": "PRIM_SCULPT_FLAG_INVERT",
         "body": [
@@ -3708,6 +3722,13 @@
             "PRIM_SCULPT_TYPE_MASK$0"
         ],
         "description": "PRIM_SCULPT_TYPE_MASK"
+    },
+    "PRIM_SCULPT_TYPE_MESH": {
+        "prefix": "PRIM_SCULPT_TYPE_MESH",
+        "body": [
+            "PRIM_SCULPT_TYPE_MESH$0"
+        ],
+        "description": "PRIM_SCULPT_TYPE_MESH"
     },
     "PRIM_SCULPT_TYPE_PLANE": {
         "prefix": "PRIM_SCULPT_TYPE_PLANE",
