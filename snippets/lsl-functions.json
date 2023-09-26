@@ -2703,7 +2703,7 @@
     "llSetClickAction": {
         "prefix": "llSetClickAction",
         "body": [
-            "llSetClickAction(${1|CLICK_ACTION_NONE,CLICK_ACTION_TOUCH,CLICK_ACTION_SIT,CLICK_ACTION_BUY,CLICK_ACTION_PAY,CLICK_ACTION_OPEN,CLICK_ACTION_PLAY,CLICK_ACTION_OPEN_MEDIA,CLICK_ACTION_ZOOM,CLICK_ACTION_DISABLED|});$0"
+            "llSetClickAction(${1|CLICK_ACTION_NONE,CLICK_ACTION_TOUCH,CLICK_ACTION_SIT,CLICK_ACTION_BUY,CLICK_ACTION_PAY,CLICK_ACTION_OPEN,CLICK_ACTION_PLAY,CLICK_ACTION_OPEN_MEDIA,CLICK_ACTION_ZOOM,CLICK_ACTION_DISABLED,CLICK_ACTION_IGNORE|});$0"
         ],
         "description": "llSetClickAction( integer action );\n\n 333 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nSets the action performed when a prim is clicked upon (aka click action).\n• integer action – CLICK_ACTION_* flag\nWhen the cursor hovers over the prim, its image changes to reflect the action.\n"
     },

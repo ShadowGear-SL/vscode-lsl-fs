@@ -916,6 +916,13 @@
         ],
         "description": "CLICK_ACTION_DISABLED"
     },
+    "CLICK_ACTION_IGNORE": {
+        "prefix": "CLICK_ACTION_IGNORE",
+        "body": [
+            "CLICK_ACTION_IGNORE$0"
+        ],
+        "description": "CLICK_ACTION_IGNORE"
+    },
     "CLICK_ACTION_NONE": {
         "prefix": "CLICK_ACTION_NONE",
         "body": [
@@ -3253,6 +3260,13 @@
             "PRIM_BUMP_WOOD$0"
         ],
         "description": "PRIM_BUMP_WOOD"
+    },
+    "PRIM_CLICK_ACTION": {
+        "prefix": "PRIM_CLICK_ACTION",
+        "body": [
+            "PRIM_CLICK_ACTION$0"
+        ],
+        "description": "PRIM_CLICK_ACTION"
     },
     "PRIM_COLOR": {
         "prefix": "PRIM_COLOR",
