@@ -17,9 +17,17 @@ Initial release.
 ## Future plans
 
 - Add syntax highlighting for Firestorm Preprocessor directives.
-- Add incoming LSL features currently being tested in RC.
 
 ## Patch Notes
+
+### 0.1.8
+* Update LSL version to 2023-11-07.6790647783.
+* Adds LSL support for upcoming PBR materials project.
+* Fixed issue where an erroneous list of constants was being provided for llSetEnvironment.
+
+### 0.1.7
+* Update LSL version to 2023-06-09.580543.
+* Cleaned up unnecessary whitespace in some snippets.
 
 ### 0.1.6
 * Update LSL version to 2023-03-24.579022.
