@@ -1251,6 +1251,13 @@
         ],
         "description": "float llGetRegionTimeDilation( );\n\n 227 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nReturns a float that is the current time dilation, the value range is [0.0, 1.0], 0.0 (full dilation) and 1.0 (no dilation).It is used as the ratio between the change of script time to that of real world time.\n"
     },
+    "llGetRenderMaterial": {
+        "prefix": "llGetRenderMaterial",
+        "body": [
+            "llGetRenderMaterial(${1:face})$0"
+        ],
+        "description": "string llGetRenderMaterial(integer face);\n\nReturns a string that is the Material on face."
+    },
     "llGetRootPosition": {
         "prefix": "llGetRootPosition",
         "body": [
@@ -2731,7 +2738,7 @@
     "llSetEnvironment": {
         "prefix": "llSetEnvironment",
         "body": [
-            "llSetEnvironment(${1:position}, ${2|ENV_NO_ENVIRONMENT,ENV_INVALID_RULE,ENV_VALIDATION_FAIL,ENV_THROTTLE,ENV_NO_PERMISSIONS|}$0)$0"
+            "llSetEnvironment(${1:position}, ${2:params}$0)$0"
         ],
         "description": "integer llSetEnvironment( string position, list params ); \n\n This function overrides the environmental settings for a region or a parcel. The owner of the script must have permission to modify the environment on the parcel or be an estate manager to change the entire region. \n An override for a given parameter can be set at the region scope or parcel scope. It can also be set for a single sky track, all sky tracks, or both. If an override of a given parameter is specified for both an individual track and all tracks, the individual track's override takes priority. \nNote that the list of valid parameters differs from those available for llGetEnvironment. \n Returns an Integer \n vector position – The location on the region of the parcel to be changed. Use <-1, -1, z> for the entire region. The z-component specifies which sky track to change, based on elevation. Use z=-1 to set an override on the special 'all tracks' slot. \n list params - A list of parameters to change for the parcel or region. Passing an empty list will remove any modifications from previous calls to llSetEnvironment."
     },
@@ -2811,6 +2818,13 @@
             "llSetLinkPrimitiveParamsFast(${1|LINK_ROOT,LINK_SET,LINK_ALL_OTHERS,LINK_ALL_CHILDREN,LINK_THIS|}, ${2:rules});$0"
         ],
         "description": "llSetLinkPrimitiveParamsFast( integer link, list rules );\n\n 353 Function ID\n 0.0 Forced Delay\n 10.0 Energy\n\nSets the prim's parameters according to rules.\n• integer link – Link number (0: unlinked, 1: root prim, >1: child prims and seated avatars) or a LINK_* flag\n• list rules\nThis function is fast compared to the above variations, not other LSL functions.\n\nCaveats\nSometimes llSetLinkPrimitiveParamsFast is too fast, i.e. the function returns and the next line of code executes & returns before the update has been processed, resulting in the updates being out of order. In most situations, there is no difference in behavior but sometimes there is. In those cases, you need to use llSetPrimitiveParams or llSetLinkPrimitiveParams.\nThis occurs because the llSetLinkPrimitiveParamsFast payload is being executed asynchronously, while llSetPrimitiveParams and llSetLinkPrimitiveParams payloads are executed synchronously (or the delay makes it appear synchronous).\n"
+    },
+    "llSetLinkRenderMaterial": {
+        "prefix": "llSetLinkRenderMaterial",
+        "body": [
+            "llSetLinkRenderMaterial(${1:link}, ${2:material}, ${3:face});$0"
+        ],
+        "description": "llSetLinkRenderMaterial(integer link, string material, integer face);\n\nIf a prim exists in the link set at link, set material on face of that prim. This function will clear most PRIM_GLTF_* properties on the face, with the exceptions of repeats, offsets, and rotation_in_radians."
     },
     "llSetLinkTexture": {
         "prefix": "llSetLinkTexture",
@@ -2923,6 +2937,13 @@
             "llSetRemoteScriptAccessPin(${1:pin});$0"
         ],
         "description": "llSetRemoteScriptAccessPin( integer pin );\n\n 252 Function ID\n 0.2 Forced Delay\n 10.0 Energy\n\nAllows a prim to have scripts remotely loaded via llRemoteLoadScriptPin when it is passes the correct pin and the prim is set mod.\n• integer pin – zero disables (ie llRemoteLoadScriptPin will fail), non-zero enables.\n"
+    },
+    "llSetRenderMaterial": {
+        "prefix": "llSetRenderMaterial",
+        "body": [
+            "llSetRenderMaterial(${1:material}, ${2:face});$0"
+        ],
+        "description": "llSetRenderMaterial(string material, integer face);\n\nSets the material of this prim's face. This function will clear most PRIM_GLTF_* properties on the face, with the exceptions of repeats, offsets, and rotation_in_radians."
     },
     "llSetRot": {
         "prefix": "llSetRot",

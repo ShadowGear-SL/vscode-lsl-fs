@@ -727,6 +727,13 @@
         ],
         "description": "CHANGED_REGION_START"
     },
+    "CHANGED_RENDER_MATERIAL": {
+        "prefix": "CHANGED_RENDER_MATERIAL",
+        "body": [
+            "CHANGED_RENDER_MATERIAL$0"
+        ],
+        "description": "CHANGED_RENDER_MATERIAL"
+    },
     "CHANGED_SCALE": {
         "prefix": "CHANGED_SCALE",
         "body": [
@@ -3303,6 +3310,55 @@
         ],
         "description": "PRIM_GLOW"
     },
+    "PRIM_GLTF_ALPHA_MODE_BLEND": {
+        "prefix": "PRIM_GLTF_ALPHA_MODE_BLEND",
+        "body": [
+            "PRIM_GLTF_ALPHA_MODE_BLEND$0"
+        ],
+        "description": "PRIM_GLTF_ALPHA_MODE_BLEND"
+    },
+    "PRIM_GLTF_ALPHA_MODE_MASK": {
+        "prefix": "PRIM_GLTF_ALPHA_MODE_MASK",
+        "body": [
+            "PRIM_GLTF_ALPHA_MODE_MASK$0"
+        ],
+        "description": "PRIM_GLTF_ALPHA_MODE_MASK"
+    },
+    "PRIM_GLTF_ALPHA_MODE_NONE": {
+        "prefix": "PRIM_GLTF_ALPHA_MODE_NONE",
+        "body": [
+            "PRIM_GLTF_ALPHA_MODE_NONE$0"
+        ],
+        "description": "PRIM_GLTF_ALPHA_MODE_NONE"
+    },
+    "PRIM_GLTF_BASE_COLOR": {
+        "prefix": "PRIM_GLTF_BASE_COLOR",
+        "body": [
+            "PRIM_GLTF_BASE_COLOR$0"
+        ],
+        "description": "PRIM_GLTF_BASE_COLOR"
+    },
+    "PRIM_GLTF_EMISSIVE": {
+        "prefix": "PRIM_GLTF_EMISSIVE",
+        "body": [
+            "PRIM_GLTF_EMISSIVE$0"
+        ],
+        "description": "PRIM_GLTF_EMISSIVE"
+    },
+    "PRIM_GLTF_METALLIC_ROUGHNESS": {
+        "prefix": "PRIM_GLTF_METALLIC_ROUGHNESS",
+        "body": [
+            "PRIM_GLTF_METALLIC_ROUGHNESS$0"
+        ],
+        "description": "PRIM_GLTF_METALLIC_ROUGHNESS"
+    },
+    "PRIM_GLTF_NORMAL": {
+        "prefix": "PRIM_GLTF_NORMAL",
+        "body": [
+            "PRIM_GLTF_NORMAL$0"
+        ],
+        "description": "PRIM_GLTF_NORMAL"
+    },
     "PRIM_HOLE_CIRCLE": {
         "prefix": "PRIM_HOLE_CIRCLE",
         "body": [
@@ -3680,6 +3736,34 @@
             "PRIM_PROJECTOR$0"
         ],
         "description": "PRIM_PROJECTOR"
+    },
+    "PRIM_REFLECTION_PROBE": {
+        "prefix": "PRIM_REFLECTION_PROBE",
+        "body": [
+            "PRIM_REFLECTION_PROBE$0"
+        ],
+        "description": "PRIM_REFLECTION_PROBE"
+    },
+    "PRIM_REFLECTION_PROBE_BOX": {
+        "prefix": "PRIM_REFLECTION_PROBE_BOX",
+        "body": [
+            "PRIM_REFLECTION_PROBE_BOX$0"
+        ],
+        "description": "PRIM_REFLECTION_PROBE_BOX"
+    },
+    "PRIM_REFLECTION_PROBE_DYNAMIC": {
+        "prefix": "PRIM_REFLECTION_PROBE_DYNAMIC",
+        "body": [
+            "PRIM_REFLECTION_PROBE_DYNAMIC$0"
+        ],
+        "description": "PRIM_REFLECTION_PROBE_DYNAMIC"
+    },
+    "PRIM_RENDER_MATERIAL": {
+        "prefix": "PRIM_RENDER_MATERIAL",
+        "body": [
+            "PRIM_RENDER_MATERIAL$0"
+        ],
+        "description": "PRIM_RENDER_MATERIAL"
     },
     "PRIM_ROTATION": {
         "prefix": "PRIM_ROTATION",
@@ -4968,6 +5052,13 @@
             "SKY_PLANET$0"
         ],
         "description": "float planet_radius, float sky_bottom_radius, float sky_top_radius\n\nPlanet information used in rendering the sky\n- planet_radius: range = [1000, 32768]\n- sky_bottom_radius: range = [1000, 32768]\n- sky_top_radius: range = [1000, 32768]"
+    },
+    "SKY_REFLECTION_PROBE_AMBIANCE": {
+        "prefix": "SKY_REFLECTION_PROBE_AMBIANCE",
+        "body": [
+            "SKY_REFLECTION_PROBE_AMBIANCE$0"
+        ],
+        "description": "SKY_REFLECTION_PROBE_AMBIANCE"
     },
     "SKY_REFRACTION": {
         "prefix": "SKY_REFRACTION",
