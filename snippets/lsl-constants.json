@@ -1623,6 +1623,13 @@
         ],
         "description": "INVENTORY_LANDMARK"
     },
+    "INVENTORY_MATERIAL": {
+        "prefix": "INVENTORY_MATERIAL",
+        "body": [
+            "INVENTORY_MATERIAL$0"
+        ],
+        "description": "INVENTORY_MATERIAL"
+    },
     "INVENTORY_NONE": {
         "prefix": "INVENTORY_NONE",
         "body": [
@@ -3324,12 +3331,12 @@
         ],
         "description": "PRIM_GLTF_ALPHA_MODE_MASK"
     },
-    "PRIM_GLTF_ALPHA_MODE_NONE": {
-        "prefix": "PRIM_GLTF_ALPHA_MODE_NONE",
+    "PRIM_GLTF_ALPHA_MODE_OPAQUE": {
+        "prefix": "PRIM_GLTF_ALPHA_MODE_OPAQUE",
         "body": [
-            "PRIM_GLTF_ALPHA_MODE_NONE$0"
+            "PRIM_GLTF_ALPHA_MODE_OPAQUE$0"
         ],
-        "description": "PRIM_GLTF_ALPHA_MODE_NONE"
+        "description": "PRIM_GLTF_ALPHA_MODE_OPAQUE"
     },
     "PRIM_GLTF_BASE_COLOR": {
         "prefix": "PRIM_GLTF_BASE_COLOR",
