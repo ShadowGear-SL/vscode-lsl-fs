@@ -1716,7 +1716,7 @@
     "llLinksetDataDeleteProtected": {
         "prefix": "llLinksetDataDeleteProtected",
         "body": [
-            "llLinksetDataDeleteProtected(${1:name, ${2:pass})$0"
+            "llLinksetDataDeleteProtected(${1:name}, ${2:pass})$0"
         ],
         "description": "The llLinksetDataDeleteProtected function erases a protected name:value pair from the linkset's datastore.\nReturns an integer success or failure code. \n string name The key of the linkset name:value pair to be deleted.The key of the linkset name:value pair to be deleted. \n string pass A pass phrase previously used to protect the name:value pair."
     },
@@ -1737,16 +1737,16 @@
     "llLinksetDataRead": {
         "prefix": "llLinksetDataRead",
         "body": [
-            "llLinksetDataRead(${1:start})$0"
+            "llLinksetDataRead(${1:name})$0"
         ],
-        "description": "list llLinksetDataRead( string start ) The llLinksetDataRead and llLinksetDataReadProtected functions return the value in the linkset's datastore for the provided name. \nIf name is not found, these functions return an empty string. Reads an unprotected name:value pair from the linkset's datastore.\nReturns a string value corresponding to name\n string name – The key of the linkset name:value pair to be read. \nIf the name is missing, or the name:value pair was created with llLinksetDataWriteProtected this function returns an empty string. "
+        "description": "list llLinksetDataRead( string name ) The llLinksetDataRead and llLinksetDataReadProtected functions return the value in the linkset's datastore for the provided name. \nIf name is not found, these functions return an empty string. Reads an unprotected name:value pair from the linkset's datastore.\nReturns a string value corresponding to name\n string name – The key of the linkset name:value pair to be read. \nIf the name is missing, or the name:value pair was created with llLinksetDataWriteProtected this function returns an empty string. "
     },
     "llLinksetDataReadProtected": {
         "prefix": "llLinksetDataReadProtected",
         "body": [
-            "llLinksetDataReadProtected(${1:start}, ${2:pass})$0"
+            "llLinksetDataReadProtected(${1:name}, ${2:pass})$0"
         ],
-        "description": "list llLinksetDataReadProtected(string start, string pass); The llLinksetDataReadProtected and llLinksetDataReadProtected functions return the value in the linkset's datastore for the provided name. \nIf name is not found, these functions return an empty string. Reads a protected name:value pair from the datastore. \nReturns a string value corresponding to name\n string name – The key of the linkset name:value pair to be read.The key of the name:value pair to be read. \n string pass The pass phrase protecting the name:value pair. \n If the pass parameter does not match, this function returns an empty string. "
+        "description": "list llLinksetDataReadProtected(string name, string pass); The llLinksetDataReadProtected and llLinksetDataReadProtected functions return the value in the linkset's datastore for the provided name. \nIf name is not found, these functions return an empty string. Reads a protected name:value pair from the datastore. \nReturns a string value corresponding to name\n string name – The key of the linkset name:value pair to be read.The key of the name:value pair to be read. \n string pass The pass phrase protecting the name:value pair. \n If the pass parameter does not match, this function returns an empty string. "
     },
     "llLinksetDataReset": {
         "prefix": "llLinksetDataReset",
